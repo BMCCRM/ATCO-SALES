@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PocketDCR2.Reports.WCF_Image" CodeBehind="WCF_Image.svc.cs"  Factory="System.ServiceModel.Activation.WebServiceHostFactory"%>

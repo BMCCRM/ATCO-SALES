@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HudsonCRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_DailySaleReport">
+          <Key>
+            <PropertyRef Name="DSRID" />
+          </Key>
+          <Property Name="DSRID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AddedID" Type="varchar(max)" />
+          <Property Name="I" Type="varchar(max)" />
+          <Property Name="DistributorID" Type="int" />
+          <Property Name="DistributorCode" Type="varchar(max)" />
+          <Property Name="DistributorName" Type="varchar(max)" />
+          <Property Name="SaleFlag" Type="varchar(max)" />
+          <Property Name="InvoiceNo" Type="varchar(max)" />
+          <Property Name="ClientID" Type="int" />
+          <Property Name="ClientCode" Type="varchar(max)" />
+          <Property Name="ClientName" Type="varchar(max)" />
+          <Property Name="ClientType" Type="varchar(max)" />
+          <Property Name="BrickID" Type="int" />
+          <Property Name="BrickCode" Type="varchar(max)" />
+          <Property Name="BrickName" Type="varchar(max)" />
+          <Property Name="TeamId" Type="int" />
+          <Property Name="TeamName" Type="varchar(max)" />
+          <Property Name="PackCode" Type="varchar(max)" />
+          <Property Name="ProductID" Type="int" />
+          <Property Name="ProductName" Type="varchar(max)" />
+          <Property Name="SkuId" Type="int" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="StockBatch" Type="varchar(max)" />
+          <Property Name="InvoiceDate" Type="datetime" />
+          <Property Name="Units" Type="bigint" />
+          <Property Name="Bonus" Type="float" />
+          <Property Name="Discount" Type="float" />
+          <Property Name="ValueNp" Type="float" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="CreateDateSystem" Type="datetime" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="flag" Type="varchar" MaxLength="10" />
+          <Property Name="SystemValueNp" Type="float" />
+        </EntityType>
+        <EntityType Name="tbl_DailySaleReport_Temp">
+          <Key>
+            <PropertyRef Name="DSRID" />
+          </Key>
+          <Property Name="DSRID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AddedID" Type="varchar(max)" />
+          <Property Name="I" Type="varchar(max)" />
+          <Property Name="DistributorID" Type="int" />
+          <Property Name="DistributorCode" Type="varchar(max)" />
+          <Property Name="DistributorName" Type="varchar(max)" />
+          <Property Name="SaleFlag" Type="varchar(max)" />
+          <Property Name="InvoiceNo" Type="varchar(max)" />
+          <Property Name="ClientID" Type="int" />
+          <Property Name="ClientCode" Type="varchar(max)" />
+          <Property Name="ClientName" Type="varchar(max)" />
+          <Property Name="ClientType" Type="varchar(max)" />
+          <Property Name="BrickID" Type="int" />
+          <Property Name="BrickCode" Type="varchar(max)" />
+          <Property Name="BrickName" Type="varchar(max)" />
+          <Property Name="TeamId" Type="int" />
+          <Property Name="TeamName" Type="varchar(max)" />
+          <Property Name="PackCode" Type="varchar(max)" />
+          <Property Name="ProductID" Type="int" />
+          <Property Name="ProductName" Type="varchar(max)" />
+          <Property Name="SkuId" Type="int" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="StockBatch" Type="varchar(max)" />
+          <Property Name="InvoiceDate" Type="datetime" />
+          <Property Name="Units" Type="varchar(max)" />
+          <Property Name="Bonus" Type="varchar(max)" />
+          <Property Name="Discount" Type="varchar(max)" />
+          <Property Name="ValueNp" Type="varchar(max)" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="CreateDateSystem" Type="datetime" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="flag" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tbl_DistributerToBricksMasterDataTemp">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DTBMID" Type="int" />
+          <Property Name="Region" Type="varchar" MaxLength="50" />
+          <Property Name="SubRegion" Type="varchar" MaxLength="50" />
+          <Property Name="District" Type="varchar" MaxLength="50" />
+          <Property Name="CityCode" Type="varchar" MaxLength="20" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="DSTBID" Type="varchar" MaxLength="20" />
+          <Property Name="Distributor" Type="varchar" MaxLength="50" />
+          <Property Name="DSTBCode" Type="varchar" MaxLength="20" />
+          <Property Name="TeamName" Type="varchar" MaxLength="50" />
+          <Property Name="BrickCode" Type="varchar" MaxLength="50" />
+          <Property Name="BrickName" Type="varchar" MaxLength="50" />
+          <Property Name="TM_SAS_ID" Type="varchar" MaxLength="20" />
+          <Property Name="Share" Type="varchar" MaxLength="10" />
+          <Property Name="CRM_TM_IDS" Type="varchar" MaxLength="50" />
+          <Property Name="ProcessStatus" Type="bit" />
+          <Property Name="Remarks" Type="varchar" MaxLength="50" />
+          <Property Name="CreateDateSystem" Type="datetime" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="flag" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AtcoCRM_V1.dbo.tbl_SalesCustTemp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="tbl_SalesCustTemp">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+            <PropertyRef Name="DSTBID" />
+            <PropertyRef Name="CUSTID" />
+            <PropertyRef Name="CT" />
+            <PropertyRef Name="CITY" />
+            <PropertyRef Name="TOWNID" />
+            <PropertyRef Name="TOWN" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="FlagStatus" />
+          </Key>
+          <Property Name="PK_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FK_ExcelID" Type="int" />
+          <Property Name="DSTBID" Type="varchar(max)" Nullable="false" />
+          <Property Name="CUSTID" Type="varchar(max)" Nullable="false" />
+          <Property Name="CT" Type="varchar(max)" Nullable="false" />
+          <Property Name="CUSTNAME" Type="varchar(max)" />
+          <Property Name="ADDRESS" Type="varchar(max)" />
+          <Property Name="CITY" Type="varchar(max)" Nullable="false" />
+          <Property Name="TOWNID" Type="varchar(max)" Nullable="false" />
+          <Property Name="TOWN" Type="varchar(max)" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="FlagStatus" Type="varchar(max)" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="StatusRemarks" Type="varchar(max)" />
+          <Property Name="RecordNo" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_SalesDataBrickWise">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CityID" Type="int" />
+          <Property Name="CityName" Type="nvarchar" MaxLength="255" />
+          <Property Name="DistributorId" Type="int" />
+          <Property Name="DistributorName" Type="nvarchar" MaxLength="255" />
+          <Property Name="BrickId" Type="int" />
+          <Property Name="BrickName" Type="nvarchar" MaxLength="255" />
+          <Property Name="ProductId" Type="int" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="255" />
+          <Property Name="SkuId" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+          <Property Name="TeamId" Type="int" />
+          <Property Name="TeamName" Type="nvarchar" MaxLength="255" />
+          <Property Name="units" Type="nvarchar" MaxLength="255" />
+          <Property Name="valuetp" Type="nvarchar" MaxLength="255" />
+          <Property Name="system" Type="nvarchar" MaxLength="255" />
+          <Property Name="MonthOfSalesData" Type="datetime" />
+          <Property Name="CreateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_SalesInvTemp">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FK_ExcelID" Type="int" />
+          <Property Name="DISBID" Type="varchar(max)" Nullable="false" />
+          <Property Name="INVOICENO" Type="varchar(max)" Nullable="false" />
+          <Property Name="INVOICEDATE" Type="varchar(max)" Nullable="false" />
+          <Property Name="CUSTID" Type="varchar(max)" Nullable="false" />
+          <Property Name="BRICKID" Type="varchar(max)" Nullable="false" />
+          <Property Name="PRODUCTID" Type="varchar(max)" Nullable="false" />
+          <Property Name="PRODUCTNAME" Type="varchar(max)" Nullable="false" />
+          <Property Name="BATCH" Type="varchar(max)" Nullable="false" />
+          <Property Name="RATE" Type="varchar(max)" Nullable="false" />
+          <Property Name="QUANTITY" Type="varchar(max)" Nullable="false" />
+          <Property Name="BONUS" Type="varchar(max)" Nullable="false" />
+          <Property Name="DISCOUNT" Type="varchar(max)" Nullable="false" />
+          <Property Name="NETAMOUNT" Type="varchar(max)" />
+          <Property Name="REASON" Type="varchar(max)" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="FlagStatus" Type="varchar(max)" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="StatusRemarks" Type="varchar(max)" />
+          <Property Name="RecordNo" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_SalesStockTemp">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FK_ExcelID" Type="int" />
+          <Property Name="DSTBID" Type="varchar(max)" Nullable="false" />
+          <Property Name="PRDID" Type="varchar(max)" Nullable="false" />
+          <Property Name="PRD" Type="varchar(max)" Nullable="false" />
+          <Property Name="BATCHNO" Type="varchar(max)" Nullable="false" />
+          <Property Name="CLDATE" Type="varchar(max)" Nullable="false" />
+          <Property Name="CLOSING" Type="varchar(max)" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="FlagStatus" Type="varchar(max)" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_UploadDistributerToBricksMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExcelFileName" Type="varchar(max)" Nullable="false" />
+          <Property Name="EmailAddress" Type="varchar(max)" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="EmailStatus" Type="varchar(max)" Nullable="false" />
+          <Property Name="EmailSendTime" Type="varchar(max)" />
+          <Property Name="ProccessStatus" Type="bit" Nullable="false" />
+          <Property Name="Remarks" Type="varchar(max)" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ProcessCompleteTime" Type="datetime" />
+          <Property Name="FileName" Type="varchar(max)" />
+          <Property Name="SendFileName" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tbl_UploadExcelSalesData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExcelFileName" Type="varchar(max)" Nullable="false" />
+          <Property Name="EmailAddress" Type="varchar(max)" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="EmailStatus" Type="varchar(max)" Nullable="false" />
+          <Property Name="EmailSendTime" Type="varchar(max)" />
+          <Property Name="ProccessStatus" Type="bit" Nullable="false" />
+          <Property Name="Remarks" Type="varchar(max)" />
+          <Property Name="ProcessRemarks" Type="varchar(max)" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ProcessCompleteTime" Type="datetime" />
+          <Property Name="FileName" Type="varchar(max)" />
+          <Property Name="SendFileName" Type="varchar(max)" />
+          <Property Name="totalRecords" Type="int" />
+          <Property Name="SelectedMonthYear" Type="date" />
+        </EntityType>
+        <EntityContainer Name="HudsonCRMModelStoreContainer">
+          <EntitySet Name="tbl_DailySaleReport" EntityType="Self.tbl_DailySaleReport" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_DailySaleReport_Temp" EntityType="Self.tbl_DailySaleReport_Temp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_DistributerToBricksMasterDataTemp" EntityType="Self.tbl_DistributerToBricksMasterDataTemp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_SalesDataBrickWise" EntityType="Self.tbl_SalesDataBrickWise" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_SalesInvTemp" EntityType="Self.tbl_SalesInvTemp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_SalesStockTemp" EntityType="Self.tbl_SalesStockTemp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_UploadDistributerToBricksMaster" EntityType="Self.tbl_UploadDistributerToBricksMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_UploadExcelSalesData" EntityType="Self.tbl_UploadExcelSalesData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_SalesCustTemp" EntityType="Self.tbl_SalesCustTemp" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [tbl_SalesCustTemp].[PK_ID] AS [PK_ID], 
+    [tbl_SalesCustTemp].[FK_ExcelID] AS [FK_ExcelID], 
+    [tbl_SalesCustTemp].[DSTBID] AS [DSTBID], 
+    [tbl_SalesCustTemp].[CUSTID] AS [CUSTID], 
+    [tbl_SalesCustTemp].[CT] AS [CT], 
+    [tbl_SalesCustTemp].[CUSTNAME] AS [CUSTNAME], 
+    [tbl_SalesCustTemp].[ADDRESS] AS [ADDRESS], 
+    [tbl_SalesCustTemp].[CITY] AS [CITY], 
+    [tbl_SalesCustTemp].[TOWNID] AS [TOWNID], 
+    [tbl_SalesCustTemp].[TOWN] AS [TOWN], 
+    [tbl_SalesCustTemp].[UserId] AS [UserId], 
+    [tbl_SalesCustTemp].[FlagStatus] AS [FlagStatus], 
+    [tbl_SalesCustTemp].[CreateDate] AS [CreateDate], 
+    [tbl_SalesCustTemp].[UpdateDate] AS [UpdateDate], 
+    [tbl_SalesCustTemp].[Status] AS [Status], 
+    [tbl_SalesCustTemp].[StatusRemarks] AS [StatusRemarks], 
+    [tbl_SalesCustTemp].[RecordNo] AS [RecordNo]
+    FROM [dbo].[tbl_SalesCustTemp] AS [tbl_SalesCustTemp]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HudsonCRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="HudsonCRMEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_DailySaleReport" EntityType="HudsonCRMModel.tbl_DailySaleReport" />
+          <EntitySet Name="tbl_DailySaleReport_Temp" EntityType="HudsonCRMModel.tbl_DailySaleReport_Temp" />
+          <EntitySet Name="tbl_DistributerToBricksMasterDataTemp" EntityType="HudsonCRMModel.tbl_DistributerToBricksMasterDataTemp" />
+          <EntitySet Name="tbl_SalesDataBrickWise" EntityType="HudsonCRMModel.tbl_SalesDataBrickWise" />
+          <EntitySet Name="tbl_UploadDistributerToBricksMaster" EntityType="HudsonCRMModel.tbl_UploadDistributerToBricksMaster" />
+          <EntitySet Name="tbl_UploadExcelSalesData" EntityType="HudsonCRMModel.tbl_UploadExcelSalesData" />
+          <EntitySet Name="tbl_SalesStockTemp" EntityType="HudsonCRMModel.tbl_SalesStockTemp" />
+          <EntitySet Name="tbl_SalesCustTemp" EntityType="HudsonCRMModel.tbl_SalesCustTemp" />
+          <EntitySet Name="tbl_SalesInvTemp" EntityType="HudsonCRMModel.tbl_SalesInvTemp" />
+        </EntityContainer>
+        <EntityType Name="tbl_DailySaleReport">
+          <Key>
+            <PropertyRef Name="DSRID" />
+          </Key>
+          <Property Name="DSRID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddedID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="I" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DistributorID" Type="Int32" />
+          <Property Name="DistributorCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DistributorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SaleFlag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="InvoiceNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ClientID" Type="Int32" />
+          <Property Name="ClientCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ClientName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ClientType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BrickID" Type="Int32" />
+          <Property Name="BrickCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BrickName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TeamId" Type="Int32" />
+          <Property Name="TeamName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PackCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ProductID" Type="Int32" />
+          <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SkuId" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="StockBatch" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="InvoiceDate" Type="DateTime" Precision="3" />
+          <Property Name="Units" Type="Int64" />
+          <Property Name="Bonus" Type="Double" />
+          <Property Name="Discount" Type="Double" />
+          <Property Name="ValueNp" Type="Double" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateDateSystem" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="flag" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="SystemValueNp" Type="Double" />
+        </EntityType>
+        <EntityType Name="tbl_DailySaleReport_Temp">
+          <Key>
+            <PropertyRef Name="DSRID" />
+          </Key>
+          <Property Name="DSRID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddedID" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="I" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DistributorID" Type="Int32" />
+          <Property Name="DistributorCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DistributorName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SaleFlag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="InvoiceNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ClientID" Type="Int32" />
+          <Property Name="ClientCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ClientName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ClientType" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BrickID" Type="Int32" />
+          <Property Name="BrickCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BrickName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TeamId" Type="Int32" />
+          <Property Name="TeamName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PackCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ProductID" Type="Int32" />
+          <Property Name="ProductName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SkuId" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="StockBatch" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="InvoiceDate" Type="DateTime" Precision="3" />
+          <Property Name="Units" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Bonus" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Discount" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ValueNp" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateDateSystem" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="flag" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_DistributerToBricksMasterDataTemp">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DTBMID" Type="Int32" />
+          <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SubRegion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="District" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CityCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DSTBID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Distributor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DSTBCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TeamName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BrickCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BrickName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TM_SAS_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Share" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CRM_TM_IDS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ProcessStatus" Type="Boolean" />
+          <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDateSystem" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="flag" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_SalesDataBrickWise">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CityID" Type="Int32" />
+          <Property Name="CityName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DistributorId" Type="Int32" />
+          <Property Name="DistributorName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="BrickId" Type="Int32" />
+          <Property Name="BrickName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ProductId" Type="Int32" />
+          <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SkuId" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="TeamId" Type="Int32" />
+          <Property Name="TeamName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="units" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="valuetp" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="system" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MonthOfSalesData" Type="DateTime" Precision="3" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tbl_UploadDistributerToBricksMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExcelFileName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="EmailStatus" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EmailSendTime" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ProccessStatus" Type="Boolean" Nullable="false" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ProcessCompleteTime" Type="DateTime" Precision="3" />
+          <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SendFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tbl_UploadExcelSalesData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExcelFileName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="EmailStatus" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EmailSendTime" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ProccessStatus" Type="Boolean" Nullable="false" />
+          <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ProcessCompleteTime" Type="DateTime" Precision="3" />
+          <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SendFileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="totalRecords" Type="Int32" />
+          <Property Name="ProcessRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SelectedMonthYear" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tbl_SalesStockTemp">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FK_ExcelID" Type="Int32" />
+          <Property Name="DSTBID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PRDID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PRD" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BATCHNO" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CLDATE" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CLOSING" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="FlagStatus" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tbl_SalesCustTemp">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+            <PropertyRef Name="DSTBID" />
+            <PropertyRef Name="CUSTID" />
+            <PropertyRef Name="CT" />
+            <PropertyRef Name="CITY" />
+            <PropertyRef Name="TOWNID" />
+            <PropertyRef Name="TOWN" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="FlagStatus" />
+          </Key>
+          <Property Name="PK_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FK_ExcelID" Type="Int32" />
+          <Property Name="DSTBID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CUSTID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CT" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CUSTNAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CITY" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TOWNID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TOWN" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="FlagStatus" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="StatusRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RecordNo" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_SalesInvTemp">
+          <Key>
+            <PropertyRef Name="PK_ID" />
+          </Key>
+          <Property Name="PK_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FK_ExcelID" Type="Int32" />
+          <Property Name="DISBID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INVOICENO" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INVOICEDATE" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CUSTID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BRICKID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PRODUCTID" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PRODUCTNAME" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BATCH" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RATE" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="QUANTITY" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="BONUS" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DISCOUNT" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="NETAMOUNT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="REASON" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="FlagStatus" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="StatusRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="RecordNo" Type="Int32" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HudsonCRMModelStoreContainer" CdmEntityContainer="HudsonCRMEntities2">
+          <EntitySetMapping Name="tbl_DailySaleReport">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_DailySaleReport">
+              <MappingFragment StoreEntitySet="tbl_DailySaleReport">
+                <ScalarProperty Name="SystemValueNp" ColumnName="SystemValueNp" />
+                <ScalarProperty Name="flag" ColumnName="flag" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreateDateSystem" ColumnName="CreateDateSystem" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ValueNp" ColumnName="ValueNp" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+                <ScalarProperty Name="Units" ColumnName="Units" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="StockBatch" ColumnName="StockBatch" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="PackCode" ColumnName="PackCode" />
+                <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+                <ScalarProperty Name="TeamId" ColumnName="TeamId" />
+                <ScalarProperty Name="BrickName" ColumnName="BrickName" />
+                <ScalarProperty Name="BrickCode" ColumnName="BrickCode" />
+                <ScalarProperty Name="BrickID" ColumnName="BrickID" />
+                <ScalarProperty Name="ClientType" ColumnName="ClientType" />
+                <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+                <ScalarProperty Name="ClientCode" ColumnName="ClientCode" />
+                <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+                <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+                <ScalarProperty Name="SaleFlag" ColumnName="SaleFlag" />
+                <ScalarProperty Name="DistributorName" ColumnName="DistributorName" />
+                <ScalarProperty Name="DistributorCode" ColumnName="DistributorCode" />
+                <ScalarProperty Name="DistributorID" ColumnName="DistributorID" />
+                <ScalarProperty Name="I" ColumnName="I" />
+                <ScalarProperty Name="AddedID" ColumnName="AddedID" />
+                <ScalarProperty Name="DSRID" ColumnName="DSRID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_DailySaleReport_Temp">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_DailySaleReport_Temp">
+              <MappingFragment StoreEntitySet="tbl_DailySaleReport_Temp">
+                <ScalarProperty Name="flag" ColumnName="flag" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreateDateSystem" ColumnName="CreateDateSystem" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ValueNp" ColumnName="ValueNp" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+                <ScalarProperty Name="Units" ColumnName="Units" />
+                <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+                <ScalarProperty Name="StockBatch" ColumnName="StockBatch" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="PackCode" ColumnName="PackCode" />
+                <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+                <ScalarProperty Name="TeamId" ColumnName="TeamId" />
+                <ScalarProperty Name="BrickName" ColumnName="BrickName" />
+                <ScalarProperty Name="BrickCode" ColumnName="BrickCode" />
+                <ScalarProperty Name="BrickID" ColumnName="BrickID" />
+                <ScalarProperty Name="ClientType" ColumnName="ClientType" />
+                <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+                <ScalarProperty Name="ClientCode" ColumnName="ClientCode" />
+                <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+                <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+                <ScalarProperty Name="SaleFlag" ColumnName="SaleFlag" />
+                <ScalarProperty Name="DistributorName" ColumnName="DistributorName" />
+                <ScalarProperty Name="DistributorCode" ColumnName="DistributorCode" />
+                <ScalarProperty Name="DistributorID" ColumnName="DistributorID" />
+                <ScalarProperty Name="I" ColumnName="I" />
+                <ScalarProperty Name="AddedID" ColumnName="AddedID" />
+                <ScalarProperty Name="DSRID" ColumnName="DSRID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_DistributerToBricksMasterDataTemp">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_DistributerToBricksMasterDataTemp">
+              <MappingFragment StoreEntitySet="tbl_DistributerToBricksMasterDataTemp">
+                <ScalarProperty Name="flag" ColumnName="flag" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="CreateDateSystem" ColumnName="CreateDateSystem" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ProcessStatus" ColumnName="ProcessStatus" />
+                <ScalarProperty Name="CRM_TM_IDS" ColumnName="CRM_TM_IDS" />
+                <ScalarProperty Name="Share" ColumnName="Share" />
+                <ScalarProperty Name="TM_SAS_ID" ColumnName="TM_SAS_ID" />
+                <ScalarProperty Name="BrickName" ColumnName="BrickName" />
+                <ScalarProperty Name="BrickCode" ColumnName="BrickCode" />
+                <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+                <ScalarProperty Name="DSTBCode" ColumnName="DSTBCode" />
+                <ScalarProperty Name="Distributor" ColumnName="Distributor" />
+                <ScalarProperty Name="DSTBID" ColumnName="DSTBID" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+                <ScalarProperty Name="District" ColumnName="District" />
+                <ScalarProperty Name="SubRegion" ColumnName="SubRegion" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="DTBMID" ColumnName="DTBMID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SalesDataBrickWise">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_SalesDataBrickWise">
+              <MappingFragment StoreEntitySet="tbl_SalesDataBrickWise">
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="MonthOfSalesData" ColumnName="MonthOfSalesData" />
+                <ScalarProperty Name="system" ColumnName="system" />
+                <ScalarProperty Name="valuetp" ColumnName="valuetp" />
+                <ScalarProperty Name="units" ColumnName="units" />
+                <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+                <ScalarProperty Name="TeamId" ColumnName="TeamId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="BrickName" ColumnName="BrickName" />
+                <ScalarProperty Name="BrickId" ColumnName="BrickId" />
+                <ScalarProperty Name="DistributorName" ColumnName="DistributorName" />
+                <ScalarProperty Name="DistributorId" ColumnName="DistributorId" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+                <ScalarProperty Name="CityID" ColumnName="CityID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_UploadDistributerToBricksMaster">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_UploadDistributerToBricksMaster">
+              <MappingFragment StoreEntitySet="tbl_UploadDistributerToBricksMaster">
+                <ScalarProperty Name="SendFileName" ColumnName="SendFileName" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="ProcessCompleteTime" ColumnName="ProcessCompleteTime" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ProccessStatus" ColumnName="ProccessStatus" />
+                <ScalarProperty Name="EmailSendTime" ColumnName="EmailSendTime" />
+                <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="ExcelFileName" ColumnName="ExcelFileName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_UploadExcelSalesData">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_UploadExcelSalesData">
+              <MappingFragment StoreEntitySet="tbl_UploadExcelSalesData">
+                <ScalarProperty Name="SelectedMonthYear" ColumnName="SelectedMonthYear" />
+                <ScalarProperty Name="ProcessRemarks" ColumnName="ProcessRemarks" />
+                <ScalarProperty Name="totalRecords" ColumnName="totalRecords" />
+                <ScalarProperty Name="SendFileName" ColumnName="SendFileName" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="ProcessCompleteTime" ColumnName="ProcessCompleteTime" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ProccessStatus" ColumnName="ProccessStatus" />
+                <ScalarProperty Name="EmailSendTime" ColumnName="EmailSendTime" />
+                <ScalarProperty Name="EmailStatus" ColumnName="EmailStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="ExcelFileName" ColumnName="ExcelFileName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SalesStockTemp">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_SalesStockTemp">
+              <MappingFragment StoreEntitySet="tbl_SalesStockTemp">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="FlagStatus" ColumnName="FlagStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="CLOSING" ColumnName="CLOSING" />
+                <ScalarProperty Name="CLDATE" ColumnName="CLDATE" />
+                <ScalarProperty Name="BATCHNO" ColumnName="BATCHNO" />
+                <ScalarProperty Name="PRD" ColumnName="PRD" />
+                <ScalarProperty Name="PRDID" ColumnName="PRDID" />
+                <ScalarProperty Name="DSTBID" ColumnName="DSTBID" />
+                <ScalarProperty Name="FK_ExcelID" ColumnName="FK_ExcelID" />
+                <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SalesCustTemp">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_SalesCustTemp">
+              <MappingFragment StoreEntitySet="tbl_SalesCustTemp">
+                <ScalarProperty Name="RecordNo" ColumnName="RecordNo" />
+                <ScalarProperty Name="StatusRemarks" ColumnName="StatusRemarks" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="FlagStatus" ColumnName="FlagStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="TOWN" ColumnName="TOWN" />
+                <ScalarProperty Name="TOWNID" ColumnName="TOWNID" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="CUSTNAME" ColumnName="CUSTNAME" />
+                <ScalarProperty Name="CT" ColumnName="CT" />
+                <ScalarProperty Name="CUSTID" ColumnName="CUSTID" />
+                <ScalarProperty Name="DSTBID" ColumnName="DSTBID" />
+                <ScalarProperty Name="FK_ExcelID" ColumnName="FK_ExcelID" />
+                <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SalesInvTemp">
+            <EntityTypeMapping TypeName="HudsonCRMModel.tbl_SalesInvTemp">
+              <MappingFragment StoreEntitySet="tbl_SalesInvTemp">
+                <ScalarProperty Name="RecordNo" ColumnName="RecordNo" />
+                <ScalarProperty Name="StatusRemarks" ColumnName="StatusRemarks" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="FlagStatus" ColumnName="FlagStatus" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="REASON" ColumnName="REASON" />
+                <ScalarProperty Name="NETAMOUNT" ColumnName="NETAMOUNT" />
+                <ScalarProperty Name="DISCOUNT" ColumnName="DISCOUNT" />
+                <ScalarProperty Name="BONUS" ColumnName="BONUS" />
+                <ScalarProperty Name="QUANTITY" ColumnName="QUANTITY" />
+                <ScalarProperty Name="RATE" ColumnName="RATE" />
+                <ScalarProperty Name="BATCH" ColumnName="BATCH" />
+                <ScalarProperty Name="PRODUCTNAME" ColumnName="PRODUCTNAME" />
+                <ScalarProperty Name="PRODUCTID" ColumnName="PRODUCTID" />
+                <ScalarProperty Name="BRICKID" ColumnName="BRICKID" />
+                <ScalarProperty Name="CUSTID" ColumnName="CUSTID" />
+                <ScalarProperty Name="INVOICEDATE" ColumnName="INVOICEDATE" />
+                <ScalarProperty Name="INVOICENO" ColumnName="INVOICENO" />
+                <ScalarProperty Name="DISBID" ColumnName="DISBID" />
+                <ScalarProperty Name="FK_ExcelID" ColumnName="FK_ExcelID" />
+                <ScalarProperty Name="PK_ID" ColumnName="PK_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

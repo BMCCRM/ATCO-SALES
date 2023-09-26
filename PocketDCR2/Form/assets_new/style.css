@@ -1,0 +1,94 @@
+﻿thead {
+            background: #b73a3c;
+            color: #fff;
+        }
+
+        .btnPrimary {
+            font-size: 90%;
+            text-shadow: none;
+            text-decoration: none;
+            text-shadow: -1px -1px 1px #72aebd;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 6px 10px 6px 10px;
+            border-radius: 5px;
+            background-color: #b73a3c;
+            border-top: 1px solid #b73a3c;
+            border-right: 1px solid #b73a3c;
+            border-bottom: 1px solid #b73a3c;
+            border-left: 1px solid #b73a3c;
+            box-shadow: 2px 1px 2px #b73a3c;
+            margin: 10px 5px 10px 5px;
+        }
+
+            .btnPrimary:hover, .btnPrimary:active, .btnPrimary:visited {
+                color: #fff;
+                position: relative;
+                top: 1px;
+                left: 1px;
+                background-color: #ca4749;
+                border-top: 1px solid #ca4749;
+                border-right: 1px solid #ca4749;
+                border-bottom: 1px solid #ca4749;
+                border-left: 1px solid #ca4749;
+                box-shadow: -1px -1px 2px #ccc;
+            }
+
+        .btnUpdate {
+            font-size: 90%;
+            text-shadow: none;
+            text-decoration: none;
+            text-shadow: -1px -1px 1px #72aebd;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 6px 10px 6px 10px;
+            border-radius: 5px;
+            background-color: #ca393b;
+            border-top: 1px solid #ca393b;
+            border-right: 1px solid #ca393b;
+            border-bottom: 1px solid #ca393b;
+            border-left: 1px solid #ca393b;
+            box-shadow: 2px 1px 2px #ca393b;
+            margin: 10px 5px 10px 5px;
+        }
+
+            .btnUpdate:hover, .btnUpdate:active, .btnUpdate:visited {
+                color: #fff;
+                position: relative;
+                top: 1px;
+                left: 1px;
+                background-color: #bb3335;
+                border-top: 1px solid #bb3335;
+                border-right: 1px solid #bb3335;
+                border-bottom: 1px solid #bb3335;
+                border-left: 1px solid #bb3335;
+                box-shadow: -1px -1px 2px #bb3335;
+            }
+
+        .jqmTitle {
+            background-color: #b73a3c;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        .jqmConfirmation {
+            background-color: #EEEEEE;
+            border: 10px solid #b73a3c;
+            color: #333333;
+            display: none;
+            left: 60%;
+            margin-left: -300px;
+            padding: 12px;
+            position: fixed;
+            top: 40%;
+            /*width: 275px;*/
+            width: 330px;
+        }
+
+        .divColumn {
+            width: 75px;
+            float: left;
+        }

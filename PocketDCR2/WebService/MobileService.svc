@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PocketDCR2.WebService.MobileService" CodeBehind="MobileService.svc.cs" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>

@@ -1,0 +1,17 @@
+﻿.mob-menu {
+	border-radius: 10px 0;
+    border: 0 !important;  
+	-webkit-appearance: none;  
+	-moz-appearance: none; 
+	background: #e7e7e7;
+	width: 85%; 
+	text-indent: 20%; 
+	text-overflow:ellipsis;
+    margin-left: auto;
+    margin-right: auto;
+	color: #000;
+    font-size: inherit;
+	border-radius: 15px;
+	padding: 10px;
+	box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+}

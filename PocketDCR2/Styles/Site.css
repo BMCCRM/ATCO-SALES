@@ -1,0 +1,488 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;    
+}
+
+h1
+{
+    font-size: 1.6em;    
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+fieldset.login label, fieldset.recoverPassword label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+input.textEntry
+{
+    width: 320px;
+    border: 1px solid #CCCC99;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.highlighted
+{
+    background-color:Blue;
+}
+
+/* PAGE FORMATION   
+----------------------------------------------------------*/
+
+body
+{
+    font-family: Verdana;
+    font-weight: normal;
+    font-size:10px;
+    font-style:normal;
+    color:#000000;
+    background-color:#CCCCCC;
+    background-position:top;
+    background-repeat:repeat-x;    
+}
+
+div.wrapper
+{    
+    width:99%;     
+    height:500px;
+    margin: 1% 1% 1% 1%;    
+}
+
+div.loginWrapper
+{
+    width: 99%;
+    height: 99%;
+    margin: 1% 1% 1% 1%;    
+}
+
+div.header
+{
+    width:99%;
+    height:30px;
+    background-color:#A0A0A0;
+    color:#FF0000;
+}
+
+div.header h1
+{        
+    text-align:center;
+    font-family:Kristen ITC;
+    font-size:25px;
+}
+
+div.innerWrapper
+{
+    width:99%;            
+    height:99%;
+    background-color:#FFFFFF; 
+    overflow:auto;
+}
+
+div.logginInnerWrapper
+{
+    background-color:#FFFFFF;        
+}
+
+div.wrapper div.currentStatus
+{
+    width:99%;
+    height:20px;
+    background-color:#FFFFCC;
+}
+
+div.innerWrapper div.sideBar
+{
+    width:205px;
+    height:100%;
+    float:left;
+    background-color:#999999;	
+}
+
+div.sideBar .navigation
+{
+    width:208px;
+    height:100%;    
+    background-color:#FFFFCC;
+}
+
+div.sideBar #Menu1 a
+{
+    margin-left:1px;
+    width:203px;
+    height:30px;
+    color: White;
+    background-color:#666699;
+    border-color:#000000;
+    font-family:Kristen ITC;
+    font-size: 15px;
+    font-weight:bold;
+    cursor:pointer;
+    border-style:outset;
+}
+
+div.sideBar #Menu1 a:Hover
+{
+    background: #d1d1d1; /* for non-css3 browsers */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#a1a1a1'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#a1a1a1)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ebebeb,  #a1a1a1); /* for firefox 3.6+ */
+ 
+	padding-left:9px;
+	color: #FF8080;
+	font-size: 18px;
+    font-weight: bolder;
+    cursor:pointer;   
+	border-top: solid 1px #f8f8f8;
+}
+
+div.innerWrapper div.content
+{ 
+    margin-left:212px;    
+    overflow:hidden;
+}
+
+div.content div.title
+{
+    width:100%;
+    height:25px;
+    background-color:#808080;
+    text-align:center;  
+    font-weight:bolder;
+    font-size:large;  
+}
+
+div.content div.padding
+{
+    padding-left:15px;    
+}
+
+.lblStatus
+{
+    text-align:center;
+    font-family:Microsoft Sans Serif;
+    font-size:13px;
+    font-weight:bold;
+    color:#000000;
+}
+
+div.footer
+{
+    width:100%;
+    height:50px;
+    background-image:url('../Images/copyright.png');
+    background-position:top;
+    background-repeat:repeat-x;
+    margin:1% 0% 1% 0%;
+}
+
+/* POPUP WINDOW
+----------------------------------------------------------*/
+
+div.popupWindow
+{
+    background:white; 
+    width:700px;     
+}
+
+div.content .popupBackground
+{
+    background-color:#CCCC99;
+    filter:alpha(opacity=70);
+    opacity:0.7;   
+}
+
+.filterWindow 
+{   
+    position: fixed;
+    top: 10%;
+    left: 23%;    
+    margin-left: -300px;
+    width: 1366px;    
+    background-color: #808080;
+    color: #333;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+/* DIV TABLE
+----------------------------------------------------------*/
+
+div.divEdit
+{
+   width:100%; 
+}
+
+div.divTable
+{
+    width: 99%;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-left:10px;
+    border-color:#000000;
+}
+
+div.divTable div.divRow
+{
+    width: 98%; 
+    padding-bottom:5px;
+    display:block;
+}
+
+div.divTable div.divColumn
+{
+    padding-left:2px;
+    float: left;
+    width: 24%;
+    display:block;
+}
+
+/* AUTHENTICATION 
+----------------------------------------------------------*/
+
+div.loginSite
+{    
+    padding-left: 600px;
+    padding-top: 163px;    
+}
+
+div.recoverPassword
+{
+    padding-left: 600px;
+    padding-top: 175px;
+}
+
+div.changePassword
+{
+    width: 400px;
+    padding-left: 350px;
+}
+
+.failureNotification
+{
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+
+/* ACCORDION PANEL
+----------------------------------------------------------*/
+
+.accordion
+{
+    width: 100%;
+}
+
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: #FFFFFF;
+    background-color: #808080;
+    font-family: Arial,Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding:5px;
+    margin-top : 5px;
+    cursor: pointer;    
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    border: 1px solid #2F4F4F;  
+    color: white;  
+    background-color: #5078B3;  
+    font-family: Arial, Sans-Serif;  
+    font-size: 12px;  
+    font-weight: bold;  
+    padding: 5px;  
+    margin-top: 5px;  
+    cursor: pointer;  
+}
+
+.accordionContent
+{
+     background-color: #D3DEEF;
+     border: 1px dashed #2F4F4F; 
+     border-top: none;  
+     padding: 5px;  
+     padding-top: 10px;  
+}
+
+/* COLLAPSIBLE PANEL
+----------------------------------------------------------*/
+
+.collapsiblePanel
+{
+    background-color:#FFFFFF;
+    overflow:hidden;
+}
+
+.collapsiblePanelHeader
+{
+    width:100%;
+    height:30px;    
+    background-image:url('../Images/panelHeader.png');
+    background-repeat:repeat-x;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+/* AJAX TAB CONTROL
+----------------------------------------------------------*/
+
+.tbContainer
+{
+    width:950px;
+    height:300px;      
+}
+
+.tbContainer .ajax__tab_header 
+{
+    font-family: verdana,tahoma,helvetica;
+    font-size: 11px;
+    border-bottom: solid 1px #999999;
+    cursor:pointer;
+}
+    
+.tbContainer .ajax__tab_outer 
+{
+    padding-right: 4px;
+    height: 21px;
+    background-color: #C0C0C0;
+    margin-right: 2px;
+    border-right: solid 1px #666666;
+    border-top: solid 1px #aaaaaa;
+}
+    
+.tbContainer .ajax__tab_inner 
+{
+    padding-left: 3px;
+    background-color: #C0C0C0;        
+}
+    
+.tbContainer .ajax__tab_tab 
+{
+    height: 13px;
+    padding: 4px;
+    margin: 0;
+}
+    
+.tbContainer .ajax__tab_hover .ajax__tab_outer 
+{
+    background-color: #cccccc;        
+}
+    
+.tbContainer .ajax__tab_hover .ajax__tab_inner 
+{
+    background-color: #cccccc;
+}
+    
+.tbContainer .ajax__tab_active .ajax__tab_outer 
+{
+    background-color: #fff;
+    border-left: solid 1px #999999;
+}
+    
+.tbContainer .ajax__tab_active .ajax__tab_inner 
+{
+    background-color:#fff;
+}
+    
+.tbContainer .ajax__tab_body 
+{
+    font-family: verdana,tahoma,helvetica;
+    font-size: 10pt;
+    border: 1px solid #999999;
+    border-top: 0;
+    padding: 8px;
+    background-color: #ffffff;
+    height:100%;
+    overflow:auto;        
+}

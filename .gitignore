@@ -1,0 +1,141 @@
+﻿###################
+# compiled source #
+###################
+.com
+*.class
+*.dll
+*.exe
+.pdb
+.dll.config
+.cache
+*.suo
+# Include dlls if they’re in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
+# Include dlls if they're in the CommonReferences directory
+!*CommonReferences/*.dll
+####################
+# VS Upgrade stuff #
+####################
+UpgradeLog.XML
+_UpgradeReport_Files/
+###############
+# Directories #
+###############
+CustomMembershipProvider\obj
+CustomMembershipProvider\obj\Debug
+CustomMembershipProvider\obj\Debug\TempPE
+CustomMembershipProvider\obj\Release
+DatabaseLayer\obj
+DatabaseLayer\obj\Debug
+DatabaseLayer\obj\Debug\TempPE
+DatabaseLayer\obj\Release
+NovartisPBG-MobileService\MyCRMServices\obj
+NovartisPBG-MobileService\MyCRMServices\obj\Debug
+NovartisPBG-MobileService\MyCRMServices\obj\Debug\edmxResourcesToEmbed
+NovartisPBG-MobileService\MyCRMServices\obj\Debug\TempPE
+NovartisPBG-MobileService\MyCRMServices\obj\Release
+PocketDCR2\obj
+PocketDCR2\obj\Debug
+PocketDCR2\obj\Debug\edmxResourcesToEmbed
+PocketDCR2\obj\Debug\edmxResourcesToEmbed\BWSD
+PocketDCR2\obj\Debug\edmxResourcesToEmbed\IMSBrickUploaderRelation
+PocketDCR2\obj\Debug\TempPE
+PocketDCR2\obj\Release
+PocketDCR2\obj\Release\edmxResourcesToEmbed
+PocketDCR2\obj\Release\edmxResourcesToEmbed\BWSD
+PocketDCR2\obj\Release\edmxResourcesToEmbed\IMSBrickUploaderRelation
+PocketDCR2\obj\Release\Package
+PocketDCR2\obj\Release\Package\PackageTmp
+PocketDCR2\obj\Release\TempPE
+PocketDCR2\obj\Release\TransformWebConfig
+PocketDCR2\obj\Release\TransformWebConfig\assist
+PocketDCR2\obj\Release\TransformWebConfig\original
+PocketDCR2\obj\Release\TransformWebConfig\transformed
+PocketDCR2\ErrorLogs/
+.vs\AtcoCRM\config/
+.vs\AtcoCRM\configapplicationhost/
+###################
+# Web publish log #
+###################
+*.Publish.xml
+#############
+# Resharper #
+#############
+/_ReSharper.*
+*.ReSharper.*
+############
+# Packages #
+############
+# it’s better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+######################
+# Logs and databases #
+######################
+.log
+.sqlite
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+[Bb]in
+[Oo]bj
+[Tt]est[Rr]esults
+*.suo
+.user
+.[Cc]ache
+[Rr]esharper*
+packages
+NuGet.exe
+_[Ss]cripts
+*.exe
+*.dll
+*.nupkg
+*.ncrunchsolution
+*.dot[Cc]over
+.txt
+*.txt
+*.suo
+*.user
+_ReSharper.*
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+# Visual Studio 2015/2017 cache/options directory
+.vs/

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e2b4e81268b24c22b1e1a08afd9216f1" Name="Diagram1">
+        <EntityTypeShape EntityType="YcoreNewModel.app_smsReceived" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="YcoreNewModel.DoctorsOfSpo" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YcoreNewModel.Employee" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="YcoreNewModel.GiftItem" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="YcoreNewModel.RefEmployees69" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="YcoreNewModel.Doctor" Width="1.5" PointX="0.75" PointY="9" />
+        <EntityTypeShape EntityType="YcoreNewModel.Product" Width="1.5" PointX="8.75" PointY="1.875" />
+        <EntityTypeShape EntityType="YcoreNewModel.ProductSku" Width="1.5" PointX="11" PointY="1" />
+        <AssociationConnector Association="YcoreNewModel.RefDoctors68" />
+        <AssociationConnector Association="YcoreNewModel.RefProducts25" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

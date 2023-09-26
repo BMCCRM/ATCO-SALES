@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SaleDS" targetNamespace="http://tempuri.org/SaleDS.xsd" xmlns:mstns="http://tempuri.org/SaleDS.xsd" xmlns="http://tempuri.org/SaleDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SaleDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SaleDS" msprop:Generator_UserDSName="SaleDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BrickWiseSale" msprop:Generator_TableClassName="BrickWiseSaleDataTable" msprop:Generator_TableVarName="tableBrickWiseSale" msprop:Generator_TablePropName="BrickWiseSale" msprop:Generator_RowDeletingName="BrickWiseSaleRowDeleting" msprop:Generator_RowChangingName="BrickWiseSaleRowChanging" msprop:Generator_RowEvHandlerName="BrickWiseSaleRowChangeEventHandler" msprop:Generator_RowDeletedName="BrickWiseSaleRowDeleted" msprop:Generator_UserTableName="BrickWiseSale" msprop:Generator_RowChangedName="BrickWiseSaleRowChanged" msprop:Generator_RowEvArgName="BrickWiseSaleRowChangeEvent" msprop:Generator_RowClassName="BrickWiseSaleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Division" msprop:Generator_ColumnVarNameInTable="columnDivision" msprop:Generator_ColumnPropNameInRow="Division" msprop:Generator_ColumnPropNameInTable="DivisionColumn" msprop:Generator_UserColumnName="Division" type="xs:string" minOccurs="0" />
+              <xs:element name="Region" msprop:Generator_ColumnVarNameInTable="columnRegion" msprop:Generator_ColumnPropNameInRow="Region" msprop:Generator_ColumnPropNameInTable="RegionColumn" msprop:Generator_UserColumnName="Region" type="xs:string" minOccurs="0" />
+              <xs:element name="Zone" msprop:Generator_ColumnVarNameInTable="columnZone" msprop:Generator_ColumnPropNameInRow="Zone" msprop:Generator_ColumnPropNameInTable="ZoneColumn" msprop:Generator_UserColumnName="Zone" type="xs:string" minOccurs="0" />
+              <xs:element name="Territory" msprop:Generator_ColumnVarNameInTable="columnTerritory" msprop:Generator_ColumnPropNameInRow="Territory" msprop:Generator_ColumnPropNameInTable="TerritoryColumn" msprop:Generator_UserColumnName="Territory" type="xs:string" minOccurs="0" />
+              <xs:element name="RegionName" msprop:Generator_ColumnVarNameInTable="columnRegionName" msprop:Generator_ColumnPropNameInRow="RegionName" msprop:Generator_ColumnPropNameInTable="RegionNameColumn" msprop:Generator_UserColumnName="RegionName" type="xs:string" minOccurs="0" />
+              <xs:element name="SubRegionName" msprop:Generator_ColumnVarNameInTable="columnSubRegionName" msprop:Generator_ColumnPropNameInRow="SubRegionName" msprop:Generator_ColumnPropNameInTable="SubRegionNameColumn" msprop:Generator_UserColumnName="SubRegionName" type="xs:string" minOccurs="0" />
+              <xs:element name="DistrictName" msprop:Generator_ColumnVarNameInTable="columnDistrictName" msprop:Generator_ColumnPropNameInRow="DistrictName" msprop:Generator_ColumnPropNameInTable="DistrictNameColumn" msprop:Generator_UserColumnName="DistrictName" type="xs:string" minOccurs="0" />
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" type="xs:string" minOccurs="0" />
+              <xs:element name="DistributorName" msprop:Generator_ColumnVarNameInTable="columnDistributorName" msprop:Generator_ColumnPropNameInRow="DistributorName" msprop:Generator_ColumnPropNameInTable="DistributorNameColumn" msprop:Generator_UserColumnName="DistributorName" type="xs:string" minOccurs="0" />
+              <xs:element name="BrickName" msprop:Generator_ColumnVarNameInTable="columnBrickName" msprop:Generator_ColumnPropNameInRow="BrickName" msprop:Generator_ColumnPropNameInTable="BrickNameColumn" msprop:Generator_UserColumnName="BrickName" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="SalePercentage" msprop:Generator_ColumnVarNameInTable="columnSalePercentage" msprop:Generator_ColumnPropNameInRow="SalePercentage" msprop:Generator_ColumnPropNameInTable="SalePercentageColumn" msprop:Generator_UserColumnName="SalePercentage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

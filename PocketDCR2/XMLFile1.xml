@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MianMenu>
+
+  <ftm>
+    <MainTab1 url="" title="Reports">
+      <link url="../Reports/newReports.aspx" title="Reports"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab2>
+  </ftm>
+
+  <rl6>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Planning">
+      <link url="../Schedular/CallPlannerMain.aspx" title="Call Planner"></link>
+      <!--  <link url="../Form/SchdulerDayView.aspx" title="Day Views"></link>-->
+    </MainTab2>
+
+    <MainTab3  url="" title="Expense Management">
+      <link url="../Form/MonthlyExpenseReport.aspx" title="Monthly Expense"></link>
+    </MainTab3>
+
+    <MainTab4 url="" title="Doctor Request by Web Portal">
+      <link url="../Form/DrAddToList.aspx" title="Add to List Doctors Request"></link>
+    </MainTab4>
+
+    <MainTab5 url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab5>
+
+    <!--<MainTab6 url="" title="Quiz Test">
+      <link url="../Form/QuizTestFill.aspx" title="Quiz Test"></link>
+    </MainTab6>-->
+
+    <!--<MainTab7  url="" title="CSR Approval Request">
+        <link url="../Form/CSRApprovalProcess.aspx" title="CSR Approval Request"></link>
+      </MainTab7>-->
+
+    <MainTab6  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab6>
+  </rl6>
+
+  <rl5>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Administration">
+      <MainTab22  url="" title="Doctors Setup">
+        <link url="../Form/DrAddToList.aspx" title="Doctor Request by Web Portal"></link>
+        <link url="../Form/NewDoctorRequest.aspx" title="Doctors Request by Apps"></link>
+      </MainTab22>
+
+      <!--<link url="../Form/Pdfuploader.aspx" title="E-Detailing PDF"></link>-->
+      <link url="../Form/LocationApproval.aspx" title="Location Approval"></link>
+      <link url="../Form/LeaveApproval.aspx" title="Leave Approval"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Planning">
+      <link url="../Schedular/CallPlannerMain.aspx" title="Call Planner"></link>
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="Expense Management">
+      <link url="../Form/MonthlyExpenseReport.aspx" title="Monthly Expense"></link>
+    </MainTab4>
+
+    <MainTab5  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+      <!--<link url="../Form/FMOFeedback.aspx" title="SPO Feedback"></link>-->
+    </MainTab5>
+
+    <MainTab6  url="" title="SSD Setup">
+      <link url="../BWSD/SalesTerritoryBrickRelation_New.aspx" title="Sales Territory Brick Relation"></link>
+
+
+	</MainTab6>
+
+    <!--<MainTab5 url="" title="Quiz Test">
+      <link url="../Form/QuizTestFill.aspx" title="Quiz Test"></link>
+    </MainTab5>
+  <MainTab6  url="" title="CSR Approval Request">
+        <link url="../Form/CSRApprovalProcess.aspx" title="CSR Approval Request"></link>
+      </MainTab6>-->
+
+    <MainTab7  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab7>
+  </rl5>
+
+  <rl4>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+      <link url="../Form/VirtualFeedBack.aspx" title="Virtual Feedback"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Administration">
+      <MainTab22  url="" title="Doctors Setup">
+        <link url="../Form/DrAddToList.aspx" title="Doctor Request by Web Portal"></link>
+        <link url="../Form/NewDoctorRequest.aspx" title="Doctors Request by Apps"></link>
+      </MainTab22>
+
+      <!--<link url="../Form/Pdfuploader.aspx" title="E-Detailing PDF"></link>-->
+      <link url="../Form/LocationApproval.aspx" title="Location Approval"></link>
+      <link url="../Form/LeaveApproval.aspx" title="Leave Approval"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Planning">
+      <link url="../Schedular/CallPlannerMain.aspx" title="Call Planner"></link>
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+    </MainTab3>
+
+    <MainTab4 url="" title="Expense Management">
+      <link url="../Form/MonthlyExpenseReport.aspx" title="Monthly Expense"></link>
+    </MainTab4>
+
+    <MainTab5 url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab5>
+
+    <MainTab6 url="" title="SSD Setup">
+      <link url="../BWSD/SalesTerritoryBrickRelation_New.aspx" title="Sales Territory Brick Relation"></link>
+
+
+	</MainTab6>
+
+    <!--<MainTab5 url="" title="Quiz Test">
+      <link url="../Form/QuizTestFill.aspx" title="Quiz Test"></link>
+    </MainTab5>-->
+
+    <!--<MainTab6  url="" title="CSR Approval Request">
+        <link url="../Form/CSRApprovalProcess.aspx" title="CSR Approval Request"></link>
+      </MainTab6>-->
+
+    <MainTab7 url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab7>
+  </rl4>
+
+  <rl3>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Administration">
+      <MainTab22  url="" title="Doctors Setup">
+        <link url="../Form/DrAddToList.aspx" title="Doctor Request by Web Portal"></link>
+        <link url="../Form/NewDoctorRequest.aspx" title="Doctors Request by Apps"></link>
+      </MainTab22>
+
+      <!--<link url="../Form/Pdfuploader.aspx" title="E-Detailing PDF"></link>-->
+      <link url="../Form/LocationApproval.aspx" title="Location Approval"></link>
+      <link url="../Form/LeaveApproval.aspx" title="Leave Approval"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Planning">
+      <link url="../Schedular/CallPlannerMain.aspx" title="Call Planner"></link>
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+    </MainTab3>
+
+    <MainTab4 url="" title="Expense Management">
+      <link url="../Form/MonthlyExpenseReport.aspx" title="Monthly Expense"></link>
+    </MainTab4>
+
+    <MainTab5 url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab5>
+
+    <MainTab6 url="" title="SSD Setup">
+      <link url="../Reports/CentralDashboard.aspx" title="Sales Dashboard (Values)"></link>
+      <link url="../Reports/CentralDashboardUnit.aspx" title="Sales Dashboard (Units)"></link>
+
+
+	</MainTab6>
+
+    <MainTab7 url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab7>
+  </rl3>
+
+  <rl2>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Administration">
+      <MainTab22  url="" title="Doctors Setup">
+        <link url="../Form/DrAddToList.aspx" title="Doctor Request by Web Portal"></link>
+        <link url="../Form/NewDoctorRequest.aspx" title="Doctors Request by Apps"></link>
+      </MainTab22>
+
+      <!--<link url="../Form/Pdfuploader.aspx" title="E-Detailing PDF"></link>-->
+      <link url="../Form/LocationApproval.aspx" title="Location Approval"></link>
+      <link url="../Form/LeaveApproval.aspx" title="Leave Approval"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab3>
+
+    <MainTab4 url="" title="Planning">
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+      <link url="../Reports/datagrid2.aspx" title="Leave Plan Management"></link>
+    </MainTab4>
+
+
+	  <MainTab5 url="" title="SSD Setup">
+
+		  <link url="../BWSD/SaleReport_BrickAllocation.aspx" title="Brick Allocation Report For SM"></link>
+
+	  </MainTab5>
+	  
+    <MainTab6  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab6>
+  </rl2>
+
+  <rl1>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Planning">
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+      <link url="../Reports/datagrid2.aspx" title="Leave Plan Management"></link>
+    </MainTab3>
+	  
+	  <MainTab4 url="" title="SSD Setup">
+		 
+		  <link url="../BWSD/SaleReport_BrickAllocation.aspx" title="Brick Allocation Report For SM"></link>
+
+	  </MainTab4>
+
+    <MainTab5  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab5>
+  </rl1>
+
+  <admin>
+    <!--<MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+
+      <link url="../Reports/SummarizeDashboard.aspx" title="National Sales Dashboard"></link>
+       <link url="../Reports/ActiveInActiveDashboard.aspx" title="Active In-Active Dashboard"></link>
+    </MainTab1>-->
+
+    <MainTab1  url="" title="Administration">
+      <link url="../Reports/MRDoctorsExcel.aspx" title="MR Doctor Upload"></link>
+      <link url="../Reports/StatusPlan.aspx" title="Meeting By Admin"></link>
+      <link url="../Reports/NewMRDoctorsExcel.aspx" title="MR Doctor Upload with Email"></link>
+      <link url="../Form/DivisionalHierarchy.aspx" title="Hierarchy Setup"></link>
+      <!--<link url="../Form/marketingplanforsamplenew.aspx" title="Sample Setup"></link>-->
+      <link url="../Form/marketingplanforsamplenew.aspx" title="Sample Management Setup"></link>
+
+      <MainTab21  url="" title="Employee Setup">
+        <link url="../Form/TeamMaster.aspx" title="Team Master"></link>
+        <link url="../Form/EmployeeDesignation.aspx" title="Employees Designation"></link>
+        <link url="../Form/MEmployees.aspx" title="Employees"></link>
+      </MainTab21>
+
+      <MainTab22  url="" title="Doctors Setup">
+        <link url="../Form/DoctorsDesignation.aspx" title="Doctors Designation"></link>
+        <link url="../Form/DoctorClasses.aspx" title="Doctors Class"></link>
+        <link url="../Form/DoctorQualification.aspx" title="Doctors Qualification"></link>
+        <link url="../Form/Speciality.aspx" title="Doctors Speciality"></link>
+        <link url="../Form/DrAddToList.aspx" title="Doctor Request by Web Portal"></link>
+        <link url="../Form/Doctors.aspx" title="Doctors"></link>
+        <link url="../Form/NewDoctorRequest.aspx" title="Doctors Request by Apps"></link>
+        <link url="../Form/DoctorBrickAndCityAlignment.aspx" title="Doctor Mapping"></link>
+      </MainTab22>
+
+      <MainTab23  url="" title="Products Setup">
+        <link url="../Form/Products.aspx" title="Brand"></link>
+        <link url="../Form/ProductForms.aspx" title="Form"></link>
+        <link url="../Form/PackSize.aspx" title="Package Size"></link>
+        <link url="../Form/ProductStrength.aspx" title="Strength"></link>
+        <link url="../Form/TeamSku.aspx" title="SKU"></link>
+      </MainTab23>
+
+      <!--<link url="../Form/Pdfuploader.aspx" title="E-Detailing PDF"></link>-->
+      <link url="../Form/LocationApproval.aspx" title="Location Approval"></link>
+      <link url="../Form/LeaveApproval.aspx" title="Leave Approval"></link>
+      <link url="../Form/DoctorBrickRel.aspx" title="Doctor Brick Relation"></link>
+
+      <!--<MainTab24  url="" title="MR Best Rating Setup">
+        <link url="../Form/Rate.aspx" title="Rating Master Setup"></link>
+        <link url="../Form/RateAssign.aspx" title="Rating Assign Setup"></link>
+      </MainTab24>
+      
+      <MainTab25  url="" title="CSR Approval Request">
+        <link url="../Form/CSRApprovalProcess.aspx" title="CSR Approval Request"></link>
+      </MainTab25>-->
+
+    </MainTab1>
+
+    <!--<MainTab2  url="" title="Planning">
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+      <link url="../Reports/datagrid2.aspx" title="Leave Plan Management"></link>
+    </MainTab2>-->
+
+    <!--<MainTab3  url="" title="Reports">
+      --><!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>--><!--
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab3>-->
+
+    <!--<MainTab5  url="" title="e-Quiz">
+      <link url="../Form/QuizTest.aspx" title="Quiz Test"></link>
+      <link url="../Form/QuizTestAssign.aspx" title="Assign Quiz Test"></link>
+      <link url="../Form/QuizTestFTMsAccounts.aspx" title="Manage FTM Accounts"></link>
+    </MainTab5>-->
+
+    <!--<MainTab4  url="" title="Expense Management">
+      <link url="../Form/MonthlyExpenseReport.aspx" title="Monthly Expense"></link>
+      <link url="../Form/ExpensePolicy.aspx" title="Expense Policy"></link>
+      <link url="../Form/Cities.aspx" title="Employee City"></link>
+      <link url="../Form/CityDistance.aspx" title="City Distance"></link>
+      <link url="../Form/MonthlyMobileBilling.aspx" title="Mobile Monthly Billing"></link>
+    </MainTab4>-->
+
+    <MainTab2  url="" title="SSD Setup">
+
+      <MainTab24  url="" title="Sales Master Data Setup">
+        <link url="../BWSD/LocationSetup.aspx" title="Geo Scheme Setup"></link>
+        <link url="../BWSD/SalesDistributor.aspx" title="Distributor Profile Setup"></link>
+        <link url="../BWSD/SalesDistributorFileUpload.aspx" title="Distributor File Upload Status"></link>
+        <link url="../BWSD/DistributorSalesAllow.aspx" title="Distributor Sales Allow"></link>
+        <link url="../BWSD/SalesBricks.aspx" title="Sales Brick Setup"></link>
+        <link url="../BWSD/Salesclient.aspx" title="Sales Customer Setup"></link>
+	
+
+		  
+      </MainTab24>
+
+      <link url="../BWSD/SalesTerritoryBrickRelation_New.aspx" title="Sales Territory Brick Relation"></link>
+
+      <!--<link url="../BWSD/DistFileStructure.aspx" title="Sales File Structure"></link>-->
+      <!--<link url="../SalesMod/SalesUpload.aspx" title="Sales Data Upload"></link>-->
+
+      <MainTab25  url="" title="Sales Data Alignment Setup">
+        <link url="../SalesMod/ProductAlignment.aspx" title="Product Alignment"></link>
+        <link url="../SalesMod/BrickAlignment.aspx" title="Brick Alignment"></link>
+        <link url="../SalesMod/BrickCorrection.aspx" title="Pharmacy Brick Correction"></link>
+        <link url="../BWSD/RegionToBrickRelationData.aspx" title="Region To Brick Data Uploader"></link>
+      </MainTab25>
+
+      <!--<link url="../BWSD/SalesBrickRelation.aspx" title="Sales Brick Relation"></link>-->
+      <!--<link url="../BWSD/BWSD.aspx" title="Brick Wise Sales Data Upload"></link>-->
+
+      <link url="../Reports/CentralDashboard.aspx" title="Sales Dashboard (Values)"></link>
+      <link url="../Reports/CentralDashboardUnit.aspx" title="Sales Dashboard (Units)"></link>
+      <link url="../BWSD/SaleReport.aspx" title="Sale Report"></link>
+      <!--<link url="../SalesMod/SalesGrid.aspx" title="Sales Grid Validation"></link>-->
+
+      <link url="../SalesMod/SalesAnalysis.aspx" title="Sales Uploading Setup"></link>
+      <link url="../BWSD/BrickAllocation.aspx" title="Brick Allocation"></link>
+      <link url="../Form/SalesDashboardTargetUploader.aspx" title="Sales Target Uploader"></link>
+      <link url="../Form/IncentiveSetup.aspx" title="Incentive Setup"></link>
+    </MainTab2>
+
+    <MainTab3 url="" title="Crm Module">
+      <link url="https://atcolab.crmpharma.net/AtcoCRM/Reports/newDashboard.aspx" title="CRM Module"></link>
+    </MainTab3>
+
+
+    <MainTab4  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab4>
+    
+  </admin>
+
+  <distributoradmin>
+    <MainTab1  url="" title="Sales Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="Distributor Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="SSD Setup Distributor">
+      <!--<link url="../SalesMod/SalesUpload.aspx" title="Sales Data Upload"></link>-->
+      <!--<link url="../BWSD/DistributorSalesGrid.aspx" title="Sales Grid Validation"></link>-->
+    </MainTab2>
+
+    <MainTab3  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab3>
+  </distributoradmin>
+
+  <headoffice>
+    <MainTab1 url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Planning">
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+      <link url="../Reports/datagrid2.aspx" title="Leave Plan Management"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="Expense Management">
+      <link url="../Form/MonthlyExpenseReport.aspx" title="Monthly Expense"></link>
+      <link url="../Form/ExpensePolicy.aspx" title="Expense Policy"></link>
+      <link url="../Form/Cities.aspx" title="Employee City"></link>
+      <link url="../Form/CityDistance.aspx" title="City Distance"></link>
+      <link url="../Form/MonthlyMobileBilling.aspx" title="Mobile Monthly Billing"></link>
+    </MainTab4>
+
+    <MainTab5  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab5>
+  </headoffice>
+
+  <marketingteam>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Planning">
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+      <link url="../Reports/datagrid2.aspx" title="Leave Plan Management"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab4>
+  </marketingteam>
+
+  <vfc>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/newDashboard.aspx" title="CRM Dashboard"></link>
+      <!--<link url="../Form/SalesFeedback.aspx" title="Virtual Feedback"></link>-->
+      <link url="../Form/VirtualFeedBack.aspx" title="Virtual Feedback"></link>
+      <!--<link url="../Form/BootStrep.aspx" title="Virtual Feedback Sample"></link>-->
+    </MainTab1>
+
+    <MainTab2  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab3>
+  </vfc>
+
+  <admincoordinator>
+    <!--<MainTab1  url="" title="Employee Management">
+      <link url="../Form/AdminCordinator.aspx" title="Employee Management"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Call Planning Admin">
+      <link url="../Reports/PlansStatusWindow.aspx" title="View Plan Status"></link>
+    </MainTab2>
+    
+    <MainTab3  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab3>-->
+
+    <MainTab1 url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+      <!--<link url="../BWSD/SaleReport.aspx" title="Sale Report"></link>-->
+    </MainTab1>
+
+    <MainTab2  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout.aspx" title="Log out"></link>
+    </MainTab2>
+  </admincoordinator>
+</MianMenu>

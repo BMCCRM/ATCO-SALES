@@ -1,0 +1,33 @@
+.jsdialog_bg { background-color: black; opacity: 0.5; position: fixed; left: 0; top: 0; width: 100%; height: 3000px; z-index: 11111; display: none; }
+.jsdialog_dlg { padding: 0; position: fixed; z-index: 11112; background-color: white; border-radius: 5px; overflow:hidden; display: none; }
+
+.jsdialog_title { box-sizing: border-box; font-size: 18px; font-weight: bold; padding: 7px 0 3px 15px; color: #333;
+                  border-bottom: 1px solid #ccc; height: 35px; }
+.jsdialog_title_text { float: left; }
+.jsdialog_x { box-sizing: border-box; float: right; width: 17px; text-align: right; cursor: pointer; padding-right: 17px;
+              margin-right: 5px; margin-top: 1px;color: #999; display: none; }
+.jsdialog_x:hover { color: #444; }
+
+.jsdialog_btn { margin: 0 0 0 20px; padding: 5px 10px; display: inline-block; float: right; color: #333;
+                font-size: 15px; margin-bottom: 20px; min-width: 80px; text-align: center; border-radius: 3px;
+                background-color: white; cursor: pointer; border: 1px solid #BBB; }
+.jsdialog_btn:hover { background-color: #EEE; text-decoration: none; border-bottom: 1px solid #BBB; }
+.jsdialog_btn_ok { background-color: #177DFF; border-color: #177DFF; color: white; }
+.jsdialog_btn_ok:hover { background-color: #0C5DC3; border-color: #0C5DC3; color: white; }
+.jsdialog_btn.jsdialog_disabled, .jsdialog_btn.jsdialog_disabled:hover, .jsdialog_btn.jsdialog_disabled:focus {
+    cursor: default; opacity: 0.3; background-color: #EEE; color: #333; border-color: #BBB; pointer-events:none; }
+
+.jsdialog_iframe { border: none; width: 100%; height: 100%; }
+.jsdialog_buttons { background: #FAFAFA; height:60px; padding: 15px 18px 15px 0; box-sizing: border-box; display: none; }
+
+.jsdialog_content_wrap { padding: 10px; }
+.jsdialog_show { display: block; }
+
+.jsdialog_message_contents { font-size: 16px; padding: 10px 0 10px 7px; display: table; overflow: hidden; }
+.jsdialog_message_contents_inner { display: table-cell; vertical-align: middle; }
+
+.jsdialog_message_icon { padding-left: 100px; min-height: 64px; background-position: 10px 10px; background-repeat: no-repeat; box-sizing: content-box; }
+.jsdialog_message_icon_info { background-image: url(info.png); }
+.jsdialog_message_icon_warning { background-image: url(warning.png); }
+.jsdialog_message_icon_error { background-image: url(error.png); }
+.jsdialog_message_icon_confirm { background-image: url(confirm.png); }

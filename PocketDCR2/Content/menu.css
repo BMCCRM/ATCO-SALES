@@ -1,0 +1,11 @@
+﻿/* CSS used here will be applied after bootstrap.css */
+
+.container {position: relative;}
+
+.editor {height: 200px; overflow: auto; background: #eee;}
+.errors {min-height: 100px; margin: 15px 0; background: #eee;}
+.preview {min-height: 100px; background: #ddd;}
+
+@media (min-width: 1200px) {
+  .preview {position: absolute; top: 0; right: 15px; width: 575px; height: 200px; }
+}

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+
+  <siteMapNode url ="" title =""  description ="" roles="*">
+
+    <siteMapNode url ="" title ="Dashboard"  description ="" roles="rl6,admin,rl6,rl5,rl4,rl3,rl2,rl1,headoffice">
+      <siteMapNode url="Reports/newDashboard.aspx" title="CRM Dashboard" description="CRM Dashboard" roles="*" />
+      <!--<siteMapNode url="Reports/salesdashboard.aspx" title="Sales Dashboard" description="Sales Dashboard" roles="*" />-->
+    </siteMapNode>
+
+    <siteMapNode url="" title="Administration" description="Administration" roles="admin">
+      <siteMapNode url="Reports/MRDoctorsExcel.aspx" title="MR Doctor Upload" description="MR Doctor Upload" roles="*" />
+      <siteMapNode url="Form/DivisionalHierarchy.aspx" title="Hierarchy Setup" description="Hierarchy Setup" roles="*" />
+      <siteMapNode url="Form/BrickManagement.aspx" title="Brick Setup" description="Brick Setup" roles="*" />
+
+      <siteMapNode url="" title="Employee Setup" description="Employee Setup" roles="*">
+
+        <siteMapNode url="Form/EmployeeDesignation.aspx" title="Employees Designation"  description="Employees Designation" roles="*" />
+        <siteMapNode url="Form/MEmployees.aspx" title="Employees"  description="Employees" roles="*" />
+        <siteMapNode url="Form/MRDoctors.aspx" title="MIO Doctors Setup"  description="MIO Doctors Setup" roles="*" />
+
+      </siteMapNode>
+
+      <siteMapNode url="" title="Doctors Setup" description="Doctors Setup" roles="*" >
+
+        <siteMapNode url="Form/DoctorsDesignation.aspx" title="Doctors Designation"  description="Doctors Designation" roles="*" />
+        <siteMapNode url="Form/DoctorClasses.aspx" title="Doctors Class"  description="Doctors Class" roles="*" />
+        <siteMapNode url="Form/DoctorQualification.aspx" title="Doctors Qualification"  description="Doctors Qualification" roles="*" />
+        <siteMapNode url="Form/Speciality.aspx" title="Doctors Speciality"  description="Doctors Speciality" roles="*" />
+        <siteMapNode url="Form/Doctors.aspx" title="Doctors"  description="Doctors" roles="*" />
+
+
+
+      </siteMapNode>
+
+      <siteMapNode url="" title="Products Setup" description="Products Setup" roles="*">
+
+        <siteMapNode url="Form/Products.aspx" title="Brand"  description="Brand" roles="*" />
+        <siteMapNode url="Form/ProductForms.aspx" title="Form"  description="Form" roles="*" />
+        <siteMapNode url="Form/PackSize.aspx" title="Package Size"  description="Package Size" roles="*" />
+        <siteMapNode url="Form/ProductStrength.aspx" title="Strength"  description="Strength" roles="*" />
+        <siteMapNode url="Form/ProductSku.aspx" title="SKU"  description="SKU" roles="*" />
+
+      </siteMapNode>
+
+      <siteMapNode url="Form/D_depot.aspx" title="Depot Master" description="Depot Master" roles="*" ></siteMapNode>
+      <siteMapNode url="Form/D_marketingview.aspx" title="Marketing View" description="Marketing View" roles="*" ></siteMapNode>
+      <siteMapNode url="Form/GiftItems.aspx" title="Gifts Setup" description="Gifts Setup" roles="*" />
+    </siteMapNode>
+
+    <!--<siteMapNode url="" title="Administration" description="Administration" roles="headoffice">
+      <siteMapNode url="Form/ManthlyoffdayPlanning.aspx" title="Calender Setup"  description="Calender Setup" roles="*" />
+    </siteMapNode>-->
+
+    <!--<siteMapNode url="" title="Sample Managment" description="Sample Managment" roles="rl5">
+      --><!--<siteMapNode url="Form/MRPlanApproval.aspx" title ="Call Planning Approval" description="Call Planning Approval" roles="*" />--><!--
+      <siteMapNode url="Form/D_mioView.aspx" title="Received Sample" description="Received Sample" roles="*" ></siteMapNode>
+      <siteMapNode url="Form/D_mioView_dis.aspx" title="Distribution Sample" description="Distribution Sample" roles="*" ></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Sample Managment" description="Planning" roles="rl6 " >
+      --><!--<siteMapNode url="Form/MRPlan.aspx" title="Call Planning" description="Call Planning" roles="*" />--><!--
+      <siteMapNode url="Form/D_miorec.aspx" title="Sample Managment" description="Sample Managment" roles="*" ></siteMapNode>
+
+    </siteMapNode>-->
+
+    <!--<siteMapNode url="" title="Call Planner" description="Planning" roles="rl6,rl5,rl4,rl3,rl2,rl1" >
+      <siteMapNode url="Schedular/CallPlannerMain.aspx" title="Call Planner" description="Planning" roles="*" ></siteMapNode>
+    </siteMapNode>-->
+    
+    <siteMapNode url="" title="Call Planner" description="Planning" roles="rl6,rl5" >
+      <siteMapNode url="Form/PlanningCache.aspx" title="Call Planner" description="Planning" roles="*" ></siteMapNode>
+      <siteMapNode url="Form/MioPlanning2.aspx" title="Call Planner 2" description="Planning" roles="*" ></siteMapNode>
+      <siteMapNode url="Form/DayView.aspx" title="Day View" description="PlanningDayView" roles="*" ></siteMapNode>
+      
+    </siteMapNode>
+    
+    <siteMapNode url="" title="Call Planning Admin" description="planningAdmin" roles="admin">
+      <siteMapNode url="Schedular/Activities.aspx" title="Planning Activities" description="Planning Activities" roles="*"></siteMapNode>
+      <siteMapNode url="Schedular/ProductsWithSpeciality.aspx" title="Planning Product With Speciality" description="ProductsWithSpeciality" roles="*"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="" title="Reports" description="Reports" roles="rl6,admin,rl6,rl5,rl4,rl3,rl2,rl1,headoffice" >
+      <siteMapNode url="Reports/newDataScreen.aspx" title="SMS Monitoring" description="SMS Monitoring" roles="*" />
+      <siteMapNode url="Reports/newReports.aspx" title="CRM Reports" description="CRM Reports" roles="*" />
+      <!--<siteMapNode url="Reports/SMSResponse.aspx" title="SMS Response" description="SMS Response" roles="*" />-->
+
+    </siteMapNode>
+
+    <!--<siteMapNode url="" title="Reports" description="Distribution" roles="rl6,admin,rl6,rl5,rl4,rl3,rl2,rl1,headoffice" >
+      <siteMapNode url="Form/D_distributionview.aspx" title="Distribution View" description="Distribution View" roles="deportteam" ></siteMapNode>
+    </siteMapNode>-->
+
+  </siteMapNode>
+
+</siteMap>

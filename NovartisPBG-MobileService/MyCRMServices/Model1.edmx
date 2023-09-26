@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="YcoreNewModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="app_smsReceived">
+          <Key>
+            <PropertyRef Name="pk_app_smsReceivedID" />
+          </Key>
+          <Property Name="pk_app_smsReceivedID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DoctorID" Type="varchar" MaxLength="500" />
+          <Property Name="visitDate" Type="date" />
+          <Property Name="MessageType" Type="varchar" MaxLength="50" />
+          <Property Name="InsertedDate" Type="datetime" />
+          <Property Name="P1" Type="varchar" MaxLength="50" />
+          <Property Name="P2" Type="varchar" MaxLength="50" />
+          <Property Name="P3" Type="varchar" MaxLength="50" />
+          <Property Name="R1" Type="varchar" MaxLength="50" />
+          <Property Name="R2" Type="varchar" MaxLength="50" />
+          <Property Name="R3" Type="varchar" MaxLength="50" />
+          <Property Name="S1" Type="varchar" MaxLength="50" />
+          <Property Name="S2" Type="varchar" MaxLength="50" />
+          <Property Name="S3" Type="varchar" MaxLength="50" />
+          <Property Name="S4" Type="varchar" MaxLength="50" />
+          <Property Name="S5" Type="varchar" MaxLength="50" />
+          <Property Name="S6" Type="varchar" MaxLength="50" />
+          <Property Name="SQ1" Type="int" />
+          <Property Name="SQ2" Type="int" />
+          <Property Name="SQ3" Type="int" />
+          <Property Name="SQ4" Type="int" />
+          <Property Name="SQ5" Type="int" />
+          <Property Name="SQ6" Type="int" />
+          <Property Name="G1" Type="varchar" MaxLength="50" />
+          <Property Name="G2" Type="varchar" MaxLength="50" />
+          <Property Name="G3" Type="varchar" MaxLength="50" />
+          <Property Name="G4" Type="varchar" MaxLength="50" />
+          <Property Name="G5" Type="varchar" MaxLength="50" />
+          <Property Name="G6" Type="varchar" MaxLength="50" />
+          <Property Name="GQ1" Type="int" />
+          <Property Name="GQ2" Type="int" />
+          <Property Name="GQ3" Type="int" />
+          <Property Name="GQ4" Type="int" />
+          <Property Name="GQ5" Type="int" />
+          <Property Name="GQ6" Type="int" />
+          <Property Name="JV" Type="varchar" MaxLength="50" />
+          <Property Name="VShift" Type="varchar" MaxLength="50" />
+          <Property Name="MobileNumber" Type="varchar" MaxLength="50" />
+          <Property Name="Latitude" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="Longitude" Type="numeric" Precision="18" Scale="6" />
+          <Property Name="Note" Type="text" />
+        </EntityType>
+        <EntityType Name="Doctors">
+          <Key>
+            <PropertyRef Name="DoctorId" />
+          </Key>
+          <Property Name="DoctorId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DesignationId" Type="int" Nullable="false" />
+          <Property Name="DoctorCode" Type="nvarchar" MaxLength="20" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gender" Type="int" Nullable="false" />
+          <Property Name="KOL" Type="bit" Nullable="false" />
+          <Property Name="Address1" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Address2" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="City" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Country" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MobileNumber1" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MobileNumber2" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="TiemStamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="DoctorsOfSpo">
+          <Key>
+            <PropertyRef Name="DoctorsOfSpoId" />
+          </Key>
+          <Property Name="DoctorsOfSpoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DoctorId" Type="bigint" Nullable="false" />
+          <Property Name="EmployeeId" Type="bigint" Nullable="false" />
+          <Property Name="DoctorCode" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="EmployeeId" />
+          </Key>
+          <Property Name="EmployeeId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DesignationId" Type="int" Nullable="false" />
+          <Property Name="EmployeeCode" Type="nvarchar" MaxLength="30" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LoginId" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MobileNumber" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="AppointmentDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdateDate" Type="datetime" Nullable="false" />
+          <Property Name="Gender" Type="int" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="ManagerId" Type="bigint" />
+          <Property Name="DepotId" Type="int" />
+          <Property Name="IsSample" Type="bit" />
+          <Property Name="pree_days" Type="int" />
+        </EntityType>
+        <EntityType Name="GiftItems">
+          <Key>
+            <PropertyRef Name="GiftId" />
+          </Key>
+          <Property Name="GiftId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GiftCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="GiftName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdate" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductCode" Type="nvarchar" MaxLength="20" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProductSku">
+          <Key>
+            <PropertyRef Name="SkuId" />
+          </Key>
+          <Property Name="SkuId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="PackSizeid" Type="int" />
+          <Property Name="StrengthId" Type="int" />
+          <Property Name="FormId" Type="int" />
+          <Property Name="SkuCode" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="SkuName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="DistributorPrice" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="TradePrice" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="RetailPrice" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="LastUpdate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="RefDoctors68">
+          <End Role="Doctors" Type="Self.Doctors" Multiplicity="1" />
+          <End Role="DoctorsOfSpo" Type="Self.DoctorsOfSpo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctors">
+              <PropertyRef Name="DoctorId" />
+            </Principal>
+            <Dependent Role="DoctorsOfSpo">
+              <PropertyRef Name="DoctorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RefEmployees69">
+          <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+          <End Role="DoctorsOfSpo" Type="Self.DoctorsOfSpo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employees">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="DoctorsOfSpo">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RefProducts25">
+          <End Role="Products" Type="Self.Products" Multiplicity="1" />
+          <End Role="ProductSku" Type="Self.ProductSku" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="ProductSku">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="YcoreNewModelStoreContainer">
+          <EntitySet Name="app_smsReceived" EntityType="Self.app_smsReceived" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Doctors" EntityType="Self.Doctors" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DoctorsOfSpo" EntityType="Self.DoctorsOfSpo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GiftItems" EntityType="Self.GiftItems" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductSku" EntityType="Self.ProductSku" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="RefDoctors68" Association="Self.RefDoctors68">
+            <End Role="Doctors" EntitySet="Doctors" />
+            <End Role="DoctorsOfSpo" EntitySet="DoctorsOfSpo" />
+          </AssociationSet>
+          <AssociationSet Name="RefEmployees69" Association="Self.RefEmployees69">
+            <End Role="Employees" EntitySet="Employees" />
+            <End Role="DoctorsOfSpo" EntitySet="DoctorsOfSpo" />
+          </AssociationSet>
+          <AssociationSet Name="RefProducts25" Association="Self.RefProducts25">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="ProductSku" EntitySet="ProductSku" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="YcoreNewModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityType Name="app_smsReceived">
+          <Key>
+            <PropertyRef Name="pk_app_smsReceivedID" />
+          </Key>
+          <Property Name="pk_app_smsReceivedID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DoctorID" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="visitDate" Type="DateTime" Precision="0" />
+          <Property Name="MessageType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="InsertedDate" Type="DateTime" Precision="3" />
+          <Property Name="P1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="P2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="P3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="R1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="R2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="R3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="S1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="S2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="S3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="S4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="S5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="S6" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SQ1" Type="Int32" />
+          <Property Name="SQ2" Type="Int32" />
+          <Property Name="SQ3" Type="Int32" />
+          <Property Name="SQ4" Type="Int32" />
+          <Property Name="SQ5" Type="Int32" />
+          <Property Name="SQ6" Type="Int32" />
+          <Property Name="G1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="G2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="G3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="G4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="G5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="G6" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GQ1" Type="Int32" />
+          <Property Name="GQ2" Type="Int32" />
+          <Property Name="GQ3" Type="Int32" />
+          <Property Name="GQ4" Type="Int32" />
+          <Property Name="GQ5" Type="Int32" />
+          <Property Name="GQ6" Type="Int32" />
+          <Property Name="JV" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VShift" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Latitude" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="Longitude" Type="Decimal" Precision="18" Scale="6" />
+          <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DoctorsOfSpo">
+          <Key>
+            <PropertyRef Name="DoctorsOfSpoId" />
+          </Key>
+          <Property Name="DoctorsOfSpoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DoctorId" Type="Int64" Nullable="false" />
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" />
+          <Property Name="DoctorCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Employee" Relationship="Self.RefEmployees69" FromRole="DoctorsOfSpo" ToRole="Employees" />
+          <NavigationProperty Name="Doctor" Relationship="YcoreNewModel.RefDoctors68" FromRole="DoctorsOfSpo" ToRole="Doctor" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeId" />
+          </Key>
+          <Property Name="EmployeeId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DesignationId" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeCode" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LoginId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AppointmentDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Gender" Type="Int32" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="ManagerId" Type="Int64" />
+          <Property Name="DepotId" Type="Int32" />
+          <Property Name="IsSample" Type="Boolean" />
+          <Property Name="pree_days" Type="Int32" />
+          <NavigationProperty Name="DoctorsOfSpoes" Relationship="Self.RefEmployees69" FromRole="Employees" ToRole="DoctorsOfSpo" />
+        </EntityType>
+        <EntityType Name="GiftItem">
+          <Key>
+            <PropertyRef Name="GiftId" />
+          </Key>
+          <Property Name="GiftId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GiftCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="GiftName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <Association Name="RefEmployees69">
+          <End Role="Employees" Type="Self.Employee" Multiplicity="1" />
+          <End Role="DoctorsOfSpo" Type="Self.DoctorsOfSpo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employees">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="DoctorsOfSpo">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="app_smsReceived" EntityType="Self.app_smsReceived" />
+          <EntitySet Name="DoctorsOfSpoes" EntityType="Self.DoctorsOfSpo" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="GiftItems" EntityType="Self.GiftItem" />
+          <AssociationSet Name="RefEmployees69" Association="Self.RefEmployees69">
+            <End Role="Employees" EntitySet="Employees" />
+            <End Role="DoctorsOfSpo" EntitySet="DoctorsOfSpoes" />
+          </AssociationSet>
+          <EntitySet Name="Doctors" EntityType="YcoreNewModel.Doctor" />
+          <EntitySet Name="Products" EntityType="YcoreNewModel.Product" />
+          <EntitySet Name="ProductSkus" EntityType="YcoreNewModel.ProductSku" />
+          <AssociationSet Name="RefDoctors68" Association="YcoreNewModel.RefDoctors68">
+            <End Role="Doctor" EntitySet="Doctors" />
+            <End Role="DoctorsOfSpo" EntitySet="DoctorsOfSpoes" />
+          </AssociationSet>
+          <AssociationSet Name="RefProducts25" Association="YcoreNewModel.RefProducts25">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="ProductSku" EntitySet="ProductSkus" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Doctor">
+          <Key>
+            <PropertyRef Name="DoctorId" />
+          </Key>
+          <Property Name="DoctorId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DesignationId" Type="Int32" Nullable="false" />
+          <Property Name="DoctorCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="Int32" Nullable="false" />
+          <Property Name="KOL" Type="Boolean" Nullable="false" />
+          <Property Name="Address1" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Address2" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MobileNumber1" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MobileNumber2" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="TiemStamp" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="DoctorsOfSpoes" Relationship="YcoreNewModel.RefDoctors68" FromRole="Doctor" ToRole="DoctorsOfSpo" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductCode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="ProductName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ProductSkus" Relationship="YcoreNewModel.RefProducts25" FromRole="Product" ToRole="ProductSku" />
+        </EntityType>
+        <EntityType Name="ProductSku">
+          <Key>
+            <PropertyRef Name="SkuId" />
+          </Key>
+          <Property Name="SkuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="PackSizeid" Type="Int32" />
+          <Property Name="StrengthId" Type="Int32" />
+          <Property Name="FormId" Type="Int32" />
+          <Property Name="SkuCode" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="SkuName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="DistributorPrice" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="TradePrice" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="RetailPrice" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastUpdate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Product" Relationship="YcoreNewModel.RefProducts25" FromRole="ProductSku" ToRole="Product" />
+        </EntityType>
+        <Association Name="RefDoctors68">
+          <End Type="YcoreNewModel.Doctor" Role="Doctor" Multiplicity="1" />
+          <End Type="YcoreNewModel.DoctorsOfSpo" Role="DoctorsOfSpo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Doctor">
+              <PropertyRef Name="DoctorId" />
+            </Principal>
+            <Dependent Role="DoctorsOfSpo">
+              <PropertyRef Name="DoctorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RefProducts25">
+          <End Type="YcoreNewModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="YcoreNewModel.ProductSku" Role="ProductSku" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="ProductSku">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="YcoreNewModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="app_smsReceived">
+            <EntityTypeMapping TypeName="YcoreNewModel.app_smsReceived">
+              <MappingFragment StoreEntitySet="app_smsReceived">
+                <ScalarProperty Name="pk_app_smsReceivedID" ColumnName="pk_app_smsReceivedID" />
+                <ScalarProperty Name="DoctorID" ColumnName="DoctorID" />
+                <ScalarProperty Name="visitDate" ColumnName="visitDate" />
+                <ScalarProperty Name="MessageType" ColumnName="MessageType" />
+                <ScalarProperty Name="InsertedDate" ColumnName="InsertedDate" />
+                <ScalarProperty Name="P1" ColumnName="P1" />
+                <ScalarProperty Name="P2" ColumnName="P2" />
+                <ScalarProperty Name="P3" ColumnName="P3" />
+                <ScalarProperty Name="R1" ColumnName="R1" />
+                <ScalarProperty Name="R2" ColumnName="R2" />
+                <ScalarProperty Name="R3" ColumnName="R3" />
+                <ScalarProperty Name="S1" ColumnName="S1" />
+                <ScalarProperty Name="S2" ColumnName="S2" />
+                <ScalarProperty Name="S3" ColumnName="S3" />
+                <ScalarProperty Name="S4" ColumnName="S4" />
+                <ScalarProperty Name="S5" ColumnName="S5" />
+                <ScalarProperty Name="S6" ColumnName="S6" />
+                <ScalarProperty Name="SQ1" ColumnName="SQ1" />
+                <ScalarProperty Name="SQ2" ColumnName="SQ2" />
+                <ScalarProperty Name="SQ3" ColumnName="SQ3" />
+                <ScalarProperty Name="SQ4" ColumnName="SQ4" />
+                <ScalarProperty Name="SQ5" ColumnName="SQ5" />
+                <ScalarProperty Name="SQ6" ColumnName="SQ6" />
+                <ScalarProperty Name="G1" ColumnName="G1" />
+                <ScalarProperty Name="G2" ColumnName="G2" />
+                <ScalarProperty Name="G3" ColumnName="G3" />
+                <ScalarProperty Name="G4" ColumnName="G4" />
+                <ScalarProperty Name="G5" ColumnName="G5" />
+                <ScalarProperty Name="G6" ColumnName="G6" />
+                <ScalarProperty Name="GQ1" ColumnName="GQ1" />
+                <ScalarProperty Name="GQ2" ColumnName="GQ2" />
+                <ScalarProperty Name="GQ3" ColumnName="GQ3" />
+                <ScalarProperty Name="GQ4" ColumnName="GQ4" />
+                <ScalarProperty Name="GQ5" ColumnName="GQ5" />
+                <ScalarProperty Name="GQ6" ColumnName="GQ6" />
+                <ScalarProperty Name="JV" ColumnName="JV" />
+                <ScalarProperty Name="VShift" ColumnName="VShift" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DoctorsOfSpoes">
+            <EntityTypeMapping TypeName="YcoreNewModel.DoctorsOfSpo">
+              <MappingFragment StoreEntitySet="DoctorsOfSpo">
+                <ScalarProperty Name="DoctorsOfSpoId" ColumnName="DoctorsOfSpoId" />
+                <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="DoctorCode" ColumnName="DoctorCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="YcoreNewModel.Employee">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+                <ScalarProperty Name="EmployeeCode" ColumnName="EmployeeCode" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="AppointmentDate" ColumnName="AppointmentDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+                <ScalarProperty Name="DepotId" ColumnName="DepotId" />
+                <ScalarProperty Name="IsSample" ColumnName="IsSample" />
+                <ScalarProperty Name="pree_days" ColumnName="pree_days" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GiftItems">
+            <EntityTypeMapping TypeName="YcoreNewModel.GiftItem">
+              <MappingFragment StoreEntitySet="GiftItems">
+                <ScalarProperty Name="GiftId" ColumnName="GiftId" />
+                <ScalarProperty Name="GiftCode" ColumnName="GiftCode" />
+                <ScalarProperty Name="GiftName" ColumnName="GiftName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Doctors">
+            <EntityTypeMapping TypeName="YcoreNewModel.Doctor">
+              <MappingFragment StoreEntitySet="Doctors">
+                <ScalarProperty Name="TiemStamp" ColumnName="TiemStamp" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="MobileNumber2" ColumnName="MobileNumber2" />
+                <ScalarProperty Name="MobileNumber1" ColumnName="MobileNumber1" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="KOL" ColumnName="KOL" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="DoctorCode" ColumnName="DoctorCode" />
+                <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+                <ScalarProperty Name="DoctorId" ColumnName="DoctorId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="YcoreNewModel.Product">
+              <MappingFragment StoreEntitySet="Products">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductSkus">
+            <EntityTypeMapping TypeName="YcoreNewModel.ProductSku">
+              <MappingFragment StoreEntitySet="ProductSku">
+                <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+                <ScalarProperty Name="TradePrice" ColumnName="TradePrice" />
+                <ScalarProperty Name="DistributorPrice" ColumnName="DistributorPrice" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="SkuName" ColumnName="SkuName" />
+                <ScalarProperty Name="SkuCode" ColumnName="SkuCode" />
+                <ScalarProperty Name="FormId" ColumnName="FormId" />
+                <ScalarProperty Name="StrengthId" ColumnName="StrengthId" />
+                <ScalarProperty Name="PackSizeid" ColumnName="PackSizeid" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="SkuId" ColumnName="SkuId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

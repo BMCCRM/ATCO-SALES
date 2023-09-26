@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4d77816d949a4ee8be606d4e93cbf4b3" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DailySaleReport" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DailySaleReport_Temp" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DistributerToBricksMasterDataTemp" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesDataBrickWise" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_UploadDistributerToBricksMaster" Width="1.5" PointX="5.125" PointY="6.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_UploadExcelSalesData" Width="1.5" PointX="9.375" PointY="6.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesStockTemp" Width="1.5" PointX="11.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesCustTemp" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesInvTemp" Width="2.375" PointX="9.125" PointY="0.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.alreadyexist_temp" Width="1.5" PointX="9.75" PointY="13" />
+        <EntityTypeShape EntityType="HudsonCRMModel.AppConfiguration" Width="1.5" PointX="18.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.AttType_Master" Width="1.5" PointX="16.75" PointY="23" />
+        <EntityTypeShape EntityType="HudsonCRMModel.BaseTownToCityDistance" Width="1.5" PointX="23.75" PointY="11" />
+        <EntityTypeShape EntityType="HudsonCRMModel.BMD" Width="1.5" PointX="20" PointY="97.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.BrickAndDistributorBulkUpload" Width="1.5" PointX="23.75" PointY="15" />
+        <EntityTypeShape EntityType="HudsonCRMModel.BrickWithRegion" Width="1.5" PointX="22" PointY="122.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallCoaching" Width="1.5" PointX="24.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallDoctor" Width="1.5" PointX="16.25" PointY="121.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallGift" Width="1.5" PointX="19.25" PointY="122.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerActivity" Width="1.5" PointX="14" PointY="207" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerActivitiesPreferredTimeAndOtherDetail" Width="1.5" PointX="0.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerBMDCoordinator" Width="1.5" PointX="14" PointY="101.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerHoliday" Width="1.5" PointX="2.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerLevel" Width="1.5" PointX="16.25" PointY="161" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevel" Width="1.5" PointX="16.25" PointY="213.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevel_Temp" Width="1.5" PointX="24.75" PointY="4" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevelGift" Width="1.5" PointX="21.5" PointY="215.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevelProduct" Width="1.5" PointX="18.5" PointY="218.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevelReminder" Width="1.5" PointX="18.5" PointY="215.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevelRSM" Width="1.5" PointX="4.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevelSample" Width="1.5" PointX="18.5" PointY="212.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevelZSM" Width="1.5" PointX="25.75" PointY="10" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMonthLevel" Width="1.5" PointX="14" PointY="214.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMonthLevel_RSM" Width="1.5" PointX="25.75" PointY="15" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerProductsWithSpeciality" Width="1.5" PointX="25.75" PointY="19" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerRSMLevel" Width="1.5" PointX="21.5" PointY="157" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerZSMLevel" Width="1.5" PointX="21.5" PointY="161.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Callproduct_Comment" Width="1.5" PointX="25.75" PointY="22" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Callproduct_Relation" Width="1.5" PointX="27.5" PointY="121.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallProduct" Width="1.5" PointX="25.25" PointY="114.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallProductSample" Width="1.5" PointX="25.25" PointY="120.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPromo" Width="1.5" PointX="16.75" PointY="9" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallReminder" Width="1.5" PointX="25.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallTiming" Width="1.5" PointX="26.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallType" Width="1.5" PointX="17.75" PointY="82.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CalVisitor" Width="1.5" PointX="26.75" PointY="4" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CalVisitors_Backup_15Sep21" Width="1.5" PointX="12.75" PointY="6" />
+        <EntityTypeShape EntityType="HudsonCRMModel.ClassOfDoctor" Width="1.5" PointX="29" PointY="98.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.ClassOfShop" Width="1.5" PointX="26" PointY="78.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DistributorType" Width="1.5" PointX="6.75" PointY="27" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorBricksAndDistributorRequest" Width="1.5" PointX="8.75" PointY="27" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorCityRelationForIMSBrick" Width="1.5" PointX="10.75" PointY="27" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorClass" Width="1.5" PointX="11.75" PointY="114.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorHierarchy" Width="1.5" PointX="32" PointY="109.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorInBrick" Width="1.5" PointX="25" PointY="124" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorOfSpoLikeDCR" Width="1.5" PointX="16.75" PointY="27" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorOfSpoLikeDCR_Backup_15Sep21" Width="1.5" PointX="27.75" PointY="8" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorOfSpoLikeDCR_OLD" Width="1.5" PointX="27.75" PointY="12" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorProductRelation" Width="1.5" PointX="23" PointY="88.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorQulification" Width="1.5" PointX="11.75" PointY="125.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Doctor" Width="1.5" PointX="20.75" PointY="88.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorsDesignation" Width="1.5" PointX="5.75" PointY="21.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorsOfSpo" Width="1.5" PointX="23" PointY="96.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorSpeciality" Width="1.5" PointX="29" PointY="94.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorVerification" Width="1.5" PointX="27.75" PointY="16" />
+        <EntityTypeShape EntityType="HudsonCRMModel.employee_ratting" Width="1.5" PointX="18.75" PointY="28" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmployeeDesignation" Width="1.5" PointX="20.75" PointY="28" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmployeeMembership" Width="1.5" PointX="26.75" PointY="95.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Employee" Width="1.5" PointX="11.75" PointY="101.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmployeesAddress" Width="1.5" PointX="14" PointY="104.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmployeesDepartment" Width="1.5" PointX="27.75" PointY="23" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmployeesType" Width="1.5" PointX="14" PointY="203.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmplyeeHierarchy" Width="1.5" PointX="29" PointY="102.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Form" Width="1.5" PointX="12.5" PointY="74.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.gazettedLeave" Width="1.5" PointX="22.75" PointY="28" />
+        <EntityTypeShape EntityType="HudsonCRMModel.GiftItem" Width="1.5" PointX="17" PointY="148.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.HierarchyLevel1" Width="1.5" PointX="17.75" PointY="90.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.HierarchyLevel2" Width="1.5" PointX="17.75" PointY="85.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.HierarchyLevel3" Width="1.5" PointX="17.75" PointY="138" />
+        <EntityTypeShape EntityType="HudsonCRMModel.HierarchyLevel4" Width="1.5" PointX="17.75" PointY="77.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.HierarchyLevel5" Width="1.5" PointX="17.75" PointY="133.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.HierarchyLevel6" Width="1.5" PointX="17.75" PointY="143" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MCInventory" Width="1.5" PointX="28.25" PointY="112.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Menu" Width="1.5" PointX="24.75" PointY="28" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MERC" Width="1.5" PointX="17" PointY="104.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MERCPlanning" Width="1.5" PointX="26" PointY="102" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MInventory" Width="1.5" PointX="17" PointY="112.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MIOPlanningLevel" Width="1.5" PointX="27.75" PointY="26" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MonthlyDoctorsUploadBatchMaster" Width="1.5" PointX="28.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MonthlyDoctorUploadBatchRecord" Width="1.5" PointX="0.75" PointY="29" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MRPlanning" Width="1.5" PointX="20" PointY="110" />
+        <EntityTypeShape EntityType="HudsonCRMModel.OffdayPlanning" Width="1.5" PointX="28.75" PointY="5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.PackSize" Width="1.5" PointX="12.5" PointY="77.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.PageVisitDetail" Width="1.5" PointX="12.75" PointY="29" />
+        <EntityTypeShape EntityType="HudsonCRMModel.PDFCallMonitor" Width="1.5" PointX="3" PointY="17.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.PlanApproval" Width="1.5" PointX="14" PointY="94.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.PreSalesCall" Width="1.5" PointX="14" PointY="108.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Product" Width="1.5" PointX="12.5" PointY="82.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.ProductSku" Width="1.5" PointX="14.75" PointY="77.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.ProductsofMR" Width="1.5" PointX="17" PointY="96.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.PromoItem" Width="1.5" PointX="2.75" PointY="30" />
+        <EntityTypeShape EntityType="HudsonCRMModel.QualificationsOfDoctor" Width="1.5" PointX="32" PointY="106.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.ReasonsofCall" Width="1.5" PointX="18.75" PointY="9" />
+        <EntityTypeShape EntityType="HudsonCRMModel.RelationLevel1" Width="1.5" PointX="29" PointY="82" />
+        <EntityTypeShape EntityType="HudsonCRMModel.RelationLevel2" Width="1.5" PointX="30" PointY="122" />
+        <EntityTypeShape EntityType="HudsonCRMModel.RelationLevel3" Width="1.5" PointX="32" PointY="99.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.RelationLevel4" Width="1.5" PointX="32" PointY="103.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.RelationLevel5" Width="1.5" PointX="20" PointY="139.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Report_DoctorDetail" Width="1.5" PointX="4.75" PointY="30" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SampleUploadBatchMaster" Width="1.5" PointX="29.75" PointY="8" />
+        <EntityTypeShape EntityType="HudsonCRMModel.ShopClass" Width="1.5" PointX="23.75" PointY="73.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.ShopHierarchy" Width="1.5" PointX="29" PointY="107.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Shop" Width="1.5" PointX="20.75" PointY="83.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.ShopsOfMerc" Width="1.5" PointX="23" PointY="99.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SmsDeleted" Width="1.5" PointX="29.75" PointY="12" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SMSInbound" Width="1.5" PointX="11.75" PointY="121.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SMSOutbound" Width="1.5" PointX="29.75" PointY="15" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SMSReceived" Width="1.5" PointX="9.5" PointY="123.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SMSReceived25092013" Width="1.5" PointX="29.75" PointY="18" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SmsSent" Width="1.5" PointX="29.75" PointY="22" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SMSTemplateMaster" Width="1.5" PointX="9.5" PointY="120" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SMSTemplateMasterDetail" Width="1.5" PointX="11.75" PointY="129.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Speciality" Width="1.5" PointX="11.75" PointY="117.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SpotCheck" Width="1.5" PointX="29.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Strength" Width="1.5" PointX="12.5" PointY="79.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.sysdiagram" Width="1.5" PointX="26.75" PointY="30" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SystemRole" Width="1.5" PointX="14" PointY="211.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ActivityApproval" Width="1.5" PointX="14" PointY="91.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ActivityRelationWithExpense" Width="1.5" PointX="29.75" PointY="29" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Answer" Width="1.5" PointX="30.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_Att" Width="1.5" PointX="14.75" PointY="31" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_BrickAllocationApproval" Width="1.5" PointX="7.375" PointY="11.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_BrickAndCitySwitchTemp" Width="1.5" PointX="16.75" PointY="31" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CallExecutionImages" Width="1.5" PointX="14" PointY="25.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CallExecutionImages_BUP" Width="1.5" PointX="14" PointY="17.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CallExecutionTimeFormobile" Width="1.5" PointX="30.75" PointY="5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_ChemistsFocusArea_FLM" Width="1.5" PointX="18.75" PointY="31" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_cities" Width="1.5" PointX="31.75" PointY="8" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_cities_history" Width="1.5" PointX="10.75" PointY="32" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_citiesdistance" Width="1.5" PointX="31.75" PointY="13" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_citiesfortest" Width="1.5" PointX="31.75" PointY="17" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CityDistanceWithSalesDistRel" Width="1.5" PointX="31.75" PointY="20" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CityDistributorToFrom" Width="1.5" PointX="20.75" PointY="32" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_client" Width="1.5" PointX="16.75" PointY="17" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CordinatorWithTeamRelation" Width="1.5" PointX="17" PointY="100.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Countries" Width="1.5" PointX="31.75" PointY="23" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_csrapproval" Width="1.5" PointX="23" PointY="102.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_csritems" Width="1.5" PointX="28.25" PointY="118.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_csrmaindata" Width="1.5" PointX="23" PointY="114.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_csrmonitoringdata" Width="1.5" PointX="22.75" PointY="32" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_csrproducts" Width="1.5" PointX="31.25" PointY="116.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_csrRequestApprovalLevels" Width="1.5" PointX="31.75" PointY="26" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CurrentSKUPrices" Width="1.5" PointX="31.75" PointY="30" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_CustomerChannelFocus" Width="1.5" PointX="32.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_CustomerChannelFocusFLM" Width="1.5" PointX="32.75" PointY="4" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DailyCallReport" Width="1.5" PointX="24.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DeactivateEmployeeDetails" Width="1.5" PointX="26.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_debug" Width="1.5" PointX="20.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Depot" Width="1.5" PointX="11.75" PointY="96.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DistributerToBricksMasterDataTempForNewDistributor" Width="1.5" PointX="28.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_distributorbrickRelation" Width="1.5" PointX="30.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_District" Width="1.5" PointX="32.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DistSKUPriceScheduleHistoryLog" Width="1.5" PointX="33.75" PointY="7" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_BuyingMotivesDetails" Width="1.5" PointX="23" PointY="91.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_ByingMotives" Width="1.5" PointX="20.75" PointY="80.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_ClinicDetails" Width="1.5" PointX="10" PointY="23.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_CompanyRelationshipDetails" Width="1.5" PointX="26" PointY="91" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_CompanyRelationStatus" Width="1.5" PointX="23.75" PointY="82.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_DistributorAndBrickDetails" Width="1.5" PointX="33.75" PointY="12" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_EmployeeRelationStatus" Width="1.5" PointX="23.75" PointY="79.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_EngagementStatus" Width="1.5" PointX="23.75" PointY="76.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_EngagingTeam" Width="1.5" PointX="26.75" PointY="81.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_EngagingTeamsDetails" Width="1.5" PointX="29" PointY="91.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_Hobby" Width="1.5" PointX="23.75" PointY="85.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_HobbyDetails" Width="1.5" PointX="26" PointY="87.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_HospitalDetails" Width="1.5" PointX="8" PointY="17.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_PersonalDetails" Width="1.5" PointX="29" PointY="85.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_PracticeType" Width="1.5" PointX="7.75" PointY="23.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_Responsbility" Width="1.5" PointX="5.75" PointY="18.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doc_Style" Width="1.5" PointX="26.75" PointY="84.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doctor_Account" Width="1.5" PointX="33.75" PointY="16" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Doctor_Professional" Width="1.5" PointX="33.75" PointY="19" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DoctorOfSpowithOtherDetail" Width="1.5" PointX="33.75" PointY="22" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DoctorRange" Width="1.5" PointX="33.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DoctorRange_Backup_15Sep21" Width="1.5" PointX="33.75" PointY="29" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DoctorwithDistributorandBrickRelation" Width="1.5" PointX="34.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_Employee_IsBigCity_IBA_TMP" Width="1.5" PointX="6.75" PointY="35" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_employeecity" Width="1.5" PointX="12.75" PointY="35" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeeDeviceDetail" Width="1.5" PointX="14" PointY="87.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_employeeexpenseapproval" Width="1.5" PointX="18.75" PointY="35" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_employeeexpensedaily" Width="1.5" PointX="20.75" PointY="22.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeeExpenseDailyAttachment" Width="1.5" PointX="14" PointY="21.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_employeeexpensedailydetail" Width="1.5" PointX="20.75" PointY="35" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Employeeexpensedailydetaillogs" Width="1.5" PointX="34.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_employeeexpensedailydetailLogsRecord" Width="1.5" PointX="35.75" PointY="5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeeExpenseManagerDeduction" Width="1.5" PointX="23" PointY="22.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_employeeexpensemonthly" Width="1.5" PointX="21" PointY="17" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeeExpenseReimbursementApproval" Width="1.5" PointX="8.75" PointY="36" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeeExpenseReimbursementDaily" Width="1.5" PointX="35.75" PointY="10" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeeExpenseReimbursementmonthly" Width="1.5" PointX="14.75" PointY="36" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeeResignationDetail" Width="1.5" PointX="14" PointY="226.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeesDesignation" Width="1.5" PointX="35.75" PointY="20" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_EmployeeTMSASIDRelation" Width="1.5" PointX="35.75" PointY="24" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_employeetravelexpensetype" Width="1.5" PointX="35.75" PointY="27" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_est_daysinfields" Width="1.5" PointX="34.75" PointY="36" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_est_workingANDdaysInField" Width="1.5" PointX="2.75" PointY="37" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ExpenseActivity" Width="1.5" PointX="11.75" PointY="17.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ExpenseCallDetails" Width="1.5" PointX="36.75" PointY="30" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ExpenseCallDetails_Backup15Sep21" Width="1.5" PointX="14" PointY="11" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ExpenseCallDetails_TEMP" Width="1.5" PointX="30.75" PointY="37" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ExpenseCallDetails_TEMP_OLD" Width="1.5" PointX="36.75" PointY="36" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ExpenseIndiviualImagepath" Width="1.5" PointX="16.25" PointY="12.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_expensepolicy" Width="1.5" PointX="18.75" PointY="16.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_expensepolicyCCL" Width="1.5" PointX="37.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ExpensePreviousDayCallsOrWithoutCalls" Width="1.5" PointX="4.75" PointY="38" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_GroupMaster" Width="1.5" PointX="15.5" PointY="166.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_GroupwithTeamrelation" Width="1.5" PointX="20" PointY="166.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_IMSBrick_Tem" Width="1.5" PointX="16.25" PointY="221.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_instructdatamaster" Width="1.5" PointX="20.75" PointY="126.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_issuance" Width="1.5" PointX="37.75" PointY="8" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_itemsmaster" Width="1.5" PointX="26" PointY="126.875" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_itemsteamrelation" Width="1.5" PointX="28.25" PointY="127.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Location" Width="1.5" PointX="37.75" PointY="12" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Location_Backup_15Sep21" Width="1.5" PointX="37.75" PointY="15" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_LocationApproval" Width="1.5" PointX="37.75" PointY="18" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_LoginHistory" Width="1.5" PointX="37.75" PointY="24" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_M_team_entery" Width="1.5" PointX="10.75" PointY="39" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MacAddress" Width="1.5" PointX="20.75" PointY="39" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MainFormAssign" Width="1.5" PointX="26.75" PointY="39" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MainFormType" Width="1.5" PointX="38.75" PointY="28" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MainRatingAssign" Width="1.5" PointX="20" PointY="106" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MainRatingForm" Width="1.5" PointX="17.75" PointY="69.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MainRatingFormType" Width="1.5" PointX="17.75" PointY="74" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MainSurveyFrom" Width="1.5" PointX="38.75" PointY="31" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MioFeedback" Width="1.5" PointX="38.75" PointY="35" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MobileBillingMonthly" Width="1.5" PointX="38.75" PointY="39" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MobileLoginAcces" Width="1.5" PointX="39.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ModuleConfiguration" Width="1.5" PointX="16.25" PointY="156.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ModulePages" Width="1.5" PointX="17" PointY="152.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ModulesMaster" Width="1.5" PointX="14" PointY="156.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ModuleWisePagesConfiguration" Width="1.5" PointX="19.25" PointY="158.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MRDoctor_New" Width="1.5" PointX="39.75" PointY="5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_NCSMFocusArea_FLM" Width="1.5" PointX="12.75" PointY="40" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_NewDoctorRequest" Width="1.5" PointX="39.75" PointY="14" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_PageVisitHistory" Width="1.5" PointX="14.75" PointY="40" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_PDFDetailMaster" Width="1.5" PointX="0.75" PointY="18.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_PDFPagesDetails" Width="1.5" PointX="3" PointY="21.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_PFSPFocusArea_FLM" Width="1.5" PointX="39.75" PointY="23" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_pharmacyBrickCorrection" Width="1.5" PointX="40.75" PointY="26" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_PostCallReporting_FLM" Width="1.5" PointX="40.75" PointY="31" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Questions" Width="1.5" PointX="40.75" PointY="36" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizData" Width="1.5" PointX="40.75" PointY="40" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizMain" Width="1.5" PointX="41.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTest" Width="1.5" PointX="0.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestAnswer" Width="1.5" PointX="2.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestAssign" Width="1.5" PointX="41.75" PointY="5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestBridgeTable" Width="1.5" PointX="4.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestFinalAttemptQuiz" Width="1.5" PointX="41.75" PointY="9" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestGrading" Width="1.5" PointX="41.75" PointY="13" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestManagers" Width="1.5" PointX="41.75" PointY="17" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestQuestions" Width="1.5" PointX="41.75" PointY="21" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestSubmitted" Width="1.5" PointX="3.75" PointY="12" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_QuizTestSubmittedAnswers" Width="1.5" PointX="20.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_RatingAnswer" Width="1.5" PointX="22.25" PointY="69.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_RatingBrickShiftRelation" Width="1.5" PointX="16.25" PointY="234" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_RatingExecutionData" Width="1.5" PointX="16.25" PointY="230.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_RatingExecutionDataDetail" Width="1.5" PointX="18.5" PointY="230.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_RatingExecutionMain" Width="1.5" PointX="14" PointY="230.125" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_RatingQuestions" Width="1.5" PointX="20" PointY="69.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Region" Width="1.5" PointX="32.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ReportConfigurationMaster" Width="1.5" PointX="34.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_ReportConfigurationRelation" Width="1.5" PointX="10.75" PointY="43" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SalesAchievedYesterdayvsMTDTarget_MIO" Width="1.5" PointX="12.75" PointY="43" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_salesBrickCityRelationFortempuse" Width="1.5" PointX="14.75" PointY="43" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesBricks" Width="1.5" PointX="42.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SalesDailyReportingExecution" Width="1.5" PointX="26.75" PointY="43" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SalesDailyReportingExecution_FLM" Width="1.5" PointX="42.75" PointY="29" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesDashboardTarget" Width="1.5" PointX="28.75" PointY="43" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesDistributor" Width="1.5" PointX="16.75" PointY="4.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_salesDistributorDetails" Width="1.5" PointX="42.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SalesFeedback" Width="1.5" PointX="36.75" PointY="43" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SalesFeedback_CommaSeperate" Width="1.5" PointX="42.75" PointY="39" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SalesFeedback_CommaSeperateFLM" Width="1.5" PointX="43.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SalesFeedback_FLM" Width="1.5" PointX="43.75" PointY="6" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SalesForecastTodayvsDailyTarget_MIO" Width="1.5" PointX="43.75" PointY="11" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesInvTemp_14Sep2021" Width="1.5" PointX="43.75" PointY="14" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesInvTemp_19_20" Width="1.5" PointX="38.75" PointY="44" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_sampleDetail" Width="1.5" PointX="43.75" PointY="21" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SellingSkillsFocusArea" Width="1.5" PointX="40.75" PointY="44" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_SellingSkillsFocusAreaFLM" Width="1.5" PointX="42.75" PointY="44" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SKUPriceSchedule" Width="1.5" PointX="16.75" PointY="45" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SKUPriceScheduleHistoryLog" Width="1.5" PointX="44.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_StretchedTarget" Width="1.5" PointX="44.75" PointY="30" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SubRegion" Width="1.5" PointX="30.75" PointY="45" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SurveyData" Width="1.5" PointX="21" PointY="11.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SurveyMain" Width="1.5" PointX="18.75" PointY="11.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_TeamMaster" Width="1.5" PointX="17.75" PointY="166.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Teams" Width="1.5" PointX="44.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_TeamwithEmployeeLevelsRelation" Width="1.5" PointX="20" PointY="143.5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_TeamwithProductrelation" Width="1.5" PointX="20" PointY="129.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_TeamwithSKUrelation" Width="1.5" PointX="23" PointY="127.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_TempSalesFileInfo" Width="1.5" PointX="44.75" PointY="37" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_TempSalesFileRecords" Width="1.5" PointX="44.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_TerritoryRelation" Width="1.5" PointX="44.75" PointY="45" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_TradeActivity" Width="1.5" PointX="45.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_TradeActivityFLM" Width="1.5" PointX="2.75" PointY="46" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_UploadCustomerBrickExcel" Width="1.5" PointX="45.75" PointY="4" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_UploadDistributerToBricksMaster_New" Width="1.5" PointX="4.75" PointY="46" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_UploadFilePath_IMSBrick" Width="1.5" PointX="14" PointY="222" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_UploadFilePath_SalesDashboardTargetUpload" Width="1.5" PointX="6.75" PointY="46" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtProduct" Width="1.5" PointX="45.75" PointY="8" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtSalesCustomerType" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtSalesDataFile" Width="1.5" PointX="45.75" PointY="11" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtSalesDistributorsCustomer" Width="1.5" PointX="19" PointY="5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtSalesDistributorsProduct" Width="1.5" PointX="45.75" PointY="16" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtSalesInvoice" Width="1.5" PointX="22" PointY="3.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtSalesZipFile" Width="1.5" PointX="18.75" PointY="46" />
+        <EntityTypeShape EntityType="HudsonCRMModel.temp_DoctorTerritorywithDistributorandBrickRelation" Width="1.5" PointX="45.75" PointY="21" />
+        <EntityTypeShape EntityType="HudsonCRMModel.temp_mileageData" Width="1.5" PointX="20.75" PointY="46" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tempbricksdata" Width="1.5" PointX="32.75" PointY="46" />
+        <EntityTypeShape EntityType="HudsonCRMModel.UnMapProductUploadBatchMaster" Width="1.5" PointX="12.75" PointY="47" />
+        <EntityTypeShape EntityType="HudsonCRMModel.UploadUnMapProductBatchRecord" Width="1.5" PointX="22.75" PointY="47" />
+        <EntityTypeShape EntityType="HudsonCRMModel.VisitFeedBack" Width="1.5" PointX="16.25" PointY="127.25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.VisitFeedBack_Backup_15Sep21" Width="1.5" PointX="16.25" PointY="129.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.bln_item_insert" Width="1.5" PointX="46.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.BrickHierarchy" Width="1.5" PointX="24.75" PointY="47" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallDoctors_Backup" Width="1.5" PointX="46.75" PointY="29" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallDoctors_Backup_New" Width="1.5" PointX="46.75" PointY="32" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallGifts_Backup" Width="1.5" PointX="46.75" PointY="35" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevel_Backup" Width="1.5" PointX="46.75" PointY="38" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMIOLevel_Backup_New" Width="1.5" PointX="40.75" PointY="47" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMonthLevel_Backup" Width="1.5" PointX="46.75" PointY="43" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMonthLevel_Backup_New" Width="1.5" PointX="46.75" PointY="47" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallPlannerMonthLevel_ZSM" Width="1.5" PointX="47.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Callproduct_Comment_Backup" Width="1.5" PointX="47.75" PointY="5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallProducts_Backup" Width="1.5" PointX="47.75" PointY="8" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallProducts_Backup_New" Width="1.5" PointX="8.75" PointY="48" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallProductSamples_Backup" Width="1.5" PointX="47.75" PointY="11" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CallReminders_Backup" Width="1.5" PointX="47.75" PointY="14" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CalVisitors_Backup" Width="1.5" PointX="47.75" PointY="17" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CalVisitors_Backup_New" Width="1.5" PointX="47.75" PointY="21" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CRMSummary" Width="1.5" PointX="34.75" PointY="48" />
+        <EntityTypeShape EntityType="HudsonCRMModel.CRMSummary_Staging" Width="1.5" PointX="0.75" PointY="49" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorOfSpoLikeDCR_Backup" Width="1.5" PointX="48.75" PointY="25" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorOfSpoLikeDCR09302013" Width="1.5" PointX="48.75" PointY="29" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorOfSpoLikeDCRBackup09102013" Width="1.5" PointX="48.75" PointY="33" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorRemoveRequest" Width="1.5" PointX="48.75" PointY="37" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorsOfSpo1" Width="1.5" PointX="48.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorsOfSPOBackup" Width="1.5" PointX="48.75" PointY="45" />
+        <EntityTypeShape EntityType="HudsonCRMModel.DoctorsOfSpos09302013" Width="1.5" PointX="48.75" PointY="48" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmailSendingbatchlog" Width="1.5" PointX="49.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmployeeDepot" Width="1.5" PointX="14" PointY="98.625" />
+        <EntityTypeShape EntityType="HudsonCRMModel.EmployeeGDBID" Width="1.5" PointX="14" PointY="219.375" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Employees1" Width="1.5" PointX="49.75" PointY="6" />
+        <EntityTypeShape EntityType="HudsonCRMModel.gazettedBackup" Width="1.5" PointX="49.75" PointY="11" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MIOPlanning" Width="1.5" PointX="14.75" PointY="50" />
+        <EntityTypeShape EntityType="HudsonCRMModel.MIOPlanning_Approval" Width="1.5" PointX="49.75" PointY="15" />
+        <EntityTypeShape EntityType="HudsonCRMModel.PreSalesCalls_Backup" Width="1.5" PointX="16.75" PointY="50" />
+        <EntityTypeShape EntityType="HudsonCRMModel.PreSalesCalls_Backup_New" Width="1.5" PointX="49.75" PointY="18" />
+        <EntityTypeShape EntityType="HudsonCRMModel.SMSReceived_mobile" Width="1.5" PointX="18.75" PointY="50" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Tbl_Attendance" Width="1.5" PointX="26.75" PointY="50" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CallExecutionTimeFormobile_Backup" Width="1.5" PointX="28.75" PointY="50" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_CallExecutionTimeFormobile_Backup_15Sep21" Width="1.5" PointX="30.75" PointY="50" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DistributorBrickRelationSSD" Width="1.5" PointX="42.75" PointY="50" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DoctorRange_Backup" Width="1.5" PointX="2.75" PointY="51" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DoctorTagging" Width="1.5" PointX="4.75" PointY="51" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DoctorTagging_Backup" Width="1.5" PointX="6.75" PointY="51" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_DoctorTaggingPermission" Width="1.5" PointX="8.75" PointY="51" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_eDetailingType" Width="1.5" PointX="10.75" PointY="51" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Employee_Image" Width="1.5" PointX="50.75" PointY="24" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_FakeGPSUsersCalls_Backup" Width="1.5" PointX="50.75" PointY="27" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_FakeGPSUsersCalls_Backup_15Sep21" Width="1.5" PointX="16.25" PointY="117.75" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_issuance_MIO" Width="1.5" PointX="50.75" PointY="31" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_Location_Backup" Width="1.5" PointX="50.75" PointY="35" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MacAddress_Backup" Width="1.5" PointX="36.75" PointY="51" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MacAddress_Backup_15Sep21" Width="1.5" PointX="50.75" PointY="38" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MainRatingFrom" Width="1.5" PointX="50.75" PointY="41" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_MRDoctor" Width="1.5" PointX="44.75" PointY="51" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_PlannerTemp" Width="1.5" PointX="50.75" PointY="46" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_productRelationWithTeam" Width="1.5" PointX="46.75" PointY="51" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_salesBricksSSD" Width="1.5" PointX="51.75" PointY="1" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesDashboardTarget_Temp" Width="1.5" PointX="51.75" PointY="5" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesDistBrickMapwithSysBrick" Width="1.5" PointX="51.75" PointY="12" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesDistProductMapwithSysProduct" Width="1.5" PointX="51.75" PointY="16" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesDistProductMapwithSysProducttempatempa" Width="1.5" PointX="20.75" PointY="52" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_salesDistributorSSD" Width="1.5" PointX="22.75" PointY="52" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SalesGroupBricks" Width="1.5" PointX="38.75" PointY="52" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SKUPrice_SalesDistributor" Width="1.5" PointX="52.75" PointY="21" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_SyncedImages" Width="1.5" PointX="52.75" PointY="26" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbl_TerritoryRelation_backup" Width="1.5" PointX="28.75" PointY="53" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tblTimeDimension" Width="1.5" PointX="52.75" PointY="30" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtSalesDataFileColumn" Width="1.5" PointX="30.75" PointY="53" />
+        <EntityTypeShape EntityType="HudsonCRMModel.tbltxtSalesDataFileStructure" Width="1.5" PointX="52.75" PointY="35" />
+        <EntityTypeShape EntityType="HudsonCRMModel.UsersPasswordHashLog" Width="1.5" PointX="52.75" PointY="39" />
+        <EntityTypeShape EntityType="HudsonCRMModel.VisitFeedBack_Backup" Width="1.5" PointX="40.75" PointY="53" />
+        <EntityTypeShape EntityType="HudsonCRMModel.VisitFeedBack_Backup_New" Width="1.5" PointX="52.75" PointY="42" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Visit" Width="1.5" PointX="52.75" PointY="45" />
+        <EntityTypeShape EntityType="HudsonCRMModel.Visits_Staging" Width="1.5" PointX="48.75" PointY="53" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_CallType" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_Doctor" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_Employee" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_HierarchyLevel1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_HierarchyLevel2" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_HierarchyLevel3" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_HierarchyLevel4" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_HierarchyLevel5" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BMD_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BrickWithRegion_HierarchyLevel4" />
+        <AssociationConnector Association="HudsonCRMModel.FK_BrickWithRegion_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.RefDoctors66" />
+        <AssociationConnector Association="HudsonCRMModel.RefPreSalesCalls65" />
+        <AssociationConnector Association="HudsonCRMModel.RefGiftItems44" />
+        <AssociationConnector Association="HudsonCRMModel.RefPreSalesCalls45" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevel_CallPlannerActivities" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerBMDCoordinator_CallPlannerMIOLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerBMDCoordinator_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerLevels_CallPlannerMIOLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerLevels_CallPlannerMonthLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerLevels_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerLevels_SystemRoles" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevel_CallPlannerMonthLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevel_Doctors" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevelGifts_CallPlannerMIOLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevelProducts_CallPlannerMIOLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevelReminders_CallPlannerMIOLevel1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevelSamples_CallPlannerMIOLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerRSMLevel_CallPlannerMIOLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerZSMLevel_CallPlannerMIOLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevelGifts_Gifts" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevelProducts_Products" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevelReminders_CallPlannerMIOLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMIOLevelSamples_Samples" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerMonthLevel_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerRSMLevel_CallPlannerMonthLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerZSMLevel_CallPlannerMonthLevel" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerRSMLevel_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallPlannerZSMLevel_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Callprodu__FK_Ca__7212AA8A" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Callprodu__FK_Ca__73FAF2FC" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Callprodu__FK_Ca__7B9C14C4" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Callprodu__FK_Ca__7C9038FD" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Callprodu__FK_Ca__7E78816F" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallProducts_ProductSku" />
+        <AssociationConnector Association="HudsonCRMModel.RefPreSalesCalls39" />
+        <AssociationConnector Association="HudsonCRMModel.RefProducts38" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallProductSamples_PreSalesCalls" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallProductSamples_PreSalesCalls1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallProductSamples_Products" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CallProductSamples_ProductSku" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_CallType" />
+        <AssociationConnector Association="HudsonCRMModel.RefCallTypes48" />
+        <AssociationConnector Association="HudsonCRMModel.FK_CalVisitors_CalVisitors" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ClassOfDoctor_Class" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ClassOfDoctor_Doctor" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ClassOfShop_Shop" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ClassOfShop_ShopClasses" />
+        <AssociationConnector Association="HudsonCRMModel.RefDoctorClasses35" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorHierarchy_Doctor" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorHierarchy_HierarchyLevel1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorHierarchy_HierarchyLevel2" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorHierarchy_HierarchyLevel3" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorHierarchy_HierarchyLevel4" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorHierarchy_HierarchyLevel5" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorHierarchy_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorInBrick_Doctors" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorInBrick_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorProductRelation_Doctor" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorProductRelation_Product" />
+        <AssociationConnector Association="HudsonCRMModel.FK_QualificationsOfDoctors_DoctorQualification" />
+        <AssociationConnector Association="HudsonCRMModel.RefDoctorQulification37" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrma__Docto__7E0E6D1B" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_B__Fk_Do__795EC697" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_P__DateO__0E59E37D" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_P__Fk_Do__08A10A27" />
+        <AssociationConnector Association="HudsonCRMModel.FK_Doctors_PreSalesCalls" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorSpeciality_Doctor" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MRPlanning_Doctor" />
+        <AssociationConnector Association="HudsonCRMModel.FK_QualificationsOfDoctors_Doctor" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_Doc_CompanyRelationshipDetails_Doctors" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_Doc_EngagingTeamsDetail_Doctors" />
+        <AssociationConnector Association="HudsonCRMModel.RefDoctors68" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_H__Fk_De__17E34DB7" />
+        <AssociationConnector Association="HudsonCRMModel.RefEmployees69" />
+        <AssociationConnector Association="HudsonCRMModel.FK_DoctorSpeciality_Speciality" />
+        <AssociationConnector Association="HudsonCRMModel.RefEmployeeMembership57" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Activ__Appro__43188FD6" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Cordi__Fk_Co__0FC30902" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__Admin__04BB6AAA" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__Finan__05AF8EE3" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__HeadO__06A3B31C" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__Level__0797D755" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__Level__088BFB8E" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__Level__09801FC7" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__Level__0A744400" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__Level__0B686839" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrma__Emplo__7D1A48E2" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Emplo__EmpId__2F5BAFEC" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Emplo__Emplo__5264F507" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_MainR__EmpId__11564BB9" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Modul__Fk_Em__51DAE522" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Modul__Fk_Em__5887E2B1" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Ratin__Ratin__18034948" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Ratin__Ratin__18F76D81" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Tbl_Uploa__EmpID__286EBB3B" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Tbl_Uploa__EmpID__30CEF712" />
+        <AssociationConnector Association="HudsonCRMModel.FK_EmployeeDepot_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK_EmployeeGDBID_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_Employee" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERCPlanning_Employee" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MInventory_Employee" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MRPlanning_Employee" />
+        <AssociationConnector Association="HudsonCRMModel.FK_PlanApproval_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK_PreSalesCalls_Employee" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ProductsofMRs_Employees" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopsOfMerc_Employee" />
+        <AssociationConnector Association="HudsonCRMModel.RefEmployees16" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel156" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel255" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel354" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel452" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel551" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel650" />
+        <AssociationConnector Association="HudsonCRMModel.RefForms29" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_HierarchyLevel1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERCPlanning_HierarchyLevel1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MInventory_HierarchyLevel1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MRPlanning_HierarchyLevel1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopHierarchy_HierarchyLevel1" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel11" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel119" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_HierarchyLevel2" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERCPlanning_HierarchyLevel2" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MInventory_HierarchyLevel2" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MRPlanning_HierarchyLevel2" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopHierarchy_HierarchyLevel2" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel211" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel220" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel23" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Cordi__TeamI__10B72D3B" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_HierarchyLevel3" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERCPlanning_HierarchyLevel3" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MInventory_HierarchyLevel3" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MRPlanning_HierarchyLevel3" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopHierarchy_HierarchyLevel3" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel312" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel321" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel35" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_HierarchyLevel4" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERCPlanning_HierarchyLevel4" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MInventory_HierarchyLevel4" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MRPlanning_HierarchyLevel4" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopHierarchy_HierarchyLevel4" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel413" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel422" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel47" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_HierarchyLevel5" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERCPlanning_HierarchyLevel5" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MInventory_HierarchyLevel5" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MRPlanning_HierarchyLevel5" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopHierarchy_HierarchyLevel5" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel514" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel523" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel59" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Teamw__FK_Le__0A0A2FAC" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERCPlanning_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MInventory_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MRPlanning_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopHierarchy_HierarchyLevel6" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel615" />
+        <AssociationConnector Association="HudsonCRMModel.RefHierarchyLevel624" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MCInventory_MInventory" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MCInventory_ProductSku" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERC_Shop" />
+        <AssociationConnector Association="HudsonCRMModel.FK_MERCPlanning_Shop" />
+        <AssociationConnector Association="HudsonCRMModel.RefPackSize26" />
+        <AssociationConnector Association="HudsonCRMModel.FK__PDFCallMo__PDFId__38EF3BC7" />
+        <AssociationConnector Association="HudsonCRMModel.FK_PreSalesCalls_SMSInbound" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_FakeGPSUsersCalls_PreSalesCalls" />
+        <AssociationConnector Association="HudsonCRMModel.RefPreSalesCalls49" />
+        <AssociationConnector Association="HudsonCRMModel.RefPreSalesCalls49New" />
+        <AssociationConnector Association="HudsonCRMModel.RefSpeciality36" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrpr__fk_pr__16DA1AE5" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Teamw__FK_Pr__04515656" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Teamw__FK_Pr__0718B468" />
+        <AssociationConnector Association="HudsonCRMModel.RefProducts25" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrpr__fk_sk__17CE3F1E" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Teamw__FK_Sk__080CD8A1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ProductsofMRs_ProductsSku" />
+        <AssociationConnector Association="HudsonCRMModel.RefStrength27" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopHierarchy_Shops" />
+        <AssociationConnector Association="HudsonCRMModel.FK_ShopsOfMerc_Shops" />
+        <AssociationConnector Association="HudsonCRMModel.FK_SMSInbound_SMSReceived" />
+        <AssociationConnector Association="HudsonCRMModel.FK_SMSInbound_SMSTemplateMaster" />
+        <AssociationConnector Association="HudsonCRMModel.FK_SMSTemplateMasterDetail_SMSTemplateMaster" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Modul__Fk_Sy__50E6C0E9" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Modul__Fk_Sy__569F9A3F" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Tbl_Brick__DBMD___414555FD" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Tbl_Brick__DBMD___46FE2F53" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Tbl_Brick__DBMD___49DA9BFE" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Tbl_Brick__DBMD___5087998D" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_CallE__fk_Ac__4EF456D6" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_CallE__fk_Ac__0F23EA84" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tblSalesDistributorsCustomers_tblSalesCustomers" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tblSalesInvoices_tblSalesCustomers" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrap__fk_cs__03C74671" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrit__fk_cs__102D1D56" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrit__fk_it__1121418F" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrma__fk_in__7F029154" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_csrpr__fk_cs__15E5F6AC" />
+        <AssociationConnector Association="HudsonCRMModel.FK_EmployeeDepot_tbl_Depot" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_B__Fk_By__7A52EAD0" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_C__FK_Pr__216CB7F1" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_Doc_CompanyRelationshipDetails_tbl_Doc_CompanyRelationshipDetails" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_Doc_CompanyRelationshipDetails_tbl_Doc_EmployeeRelationStatus" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_Doc_CompanyRelationshipDetails_tbl_Doc_EngagementStatus" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_Doc_EngagingTeamsDetail_tbl_Doc_EngagingTeam" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_P__Fk_Ho__09952E60" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_H__FK_Re__18D771F0" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Doc_P__Fk_St__0F4E07B6" />
+        <AssociationConnector Association="HudsonCRMModel.EmployeeExpenseDailyId" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Emplo__fk_Ac__28E3BC87" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_employeeexpensemonthly_tbl_expensepolicy" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Expen__Fk_Ex__0A5F3567" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Expen__Fk_Ex__16AFFDB3" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Expen__Fk_Ex__17A421EC" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Expen__Fk_Ex__6CB9C3E7" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Expen__Fk_Ex__17B93085" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Expen__Fk_Ex__1A959D30" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Group__FK_GS__3890146B" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_TeamM__Fk_GI__7F8CA139" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Group__FK_TS__398438A4" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Tbl_IMSBr__Fk_Fi__2D337058" />
+        <AssociationConnector Association="HudsonCRMModel.FK__Tbl_IMSBr__Fk_Fi__2EE6AEA0" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_items__fk_it__748502E1" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_MainR__Ratin__0F6E0347" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_MainR__Ratin__10622780" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_MainR__Ratin__0D85BAD5" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Ratin__Ratin__133E942B" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Ratin__Ratin__1526DC9D" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Modul__Fk_Mo__5793BE78" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Modul__Fk_Mo__222BD200" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Modul__Fk_Mo__4FF29CB0" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_PDFPa__PDFId__4B0DEC02" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_QuizTestSubmitted_tbl_QuizTestSubmitted" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Ratin__Quest__161B00D6" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Ratin__Ratin__1ADFB5F3" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Ratin__Ratin__1CC7FE65" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Ratin__Ratin__1EB046D7" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tblSalesDistributorsCustomers_tblSalesDistributors" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tblSalesInvoices_tblSalesDistributors" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tbl_SurveyData_tbl_SurveyMain" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Teamw__FK_Te__0624902F" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Teamw__FK_TS__05457A8F" />
+        <AssociationConnector Association="HudsonCRMModel.FK__tbl_Teamw__Fk_TS__0AFE53E5" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tblSalesDistributorsCustomers_tblSalesCustomerType" />
+        <AssociationConnector Association="HudsonCRMModel.FK_tblSalesInvoices_tblSalesCustomerType" />
+        <AssociationConnector Association="HudsonCRMModel.EmploeesInRoles" />
+        <AssociationConnector Association="HudsonCRMModel.EmployeesInType" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

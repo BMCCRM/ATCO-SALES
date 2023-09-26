@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CCLPharmaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Tbl_IMSBrick_Tem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Fk_FileID" Type="int" />
+          <Property Name="Territory" Type="nvarchar" MaxLength="200" />
+          <Property Name="CRM_Territory" Type="varchar" MaxLength="255" />
+          <Property Name="BrickCode" Type="varchar" MaxLength="255" />
+          <Property Name="BrickName" Type="varchar" MaxLength="255" />
+          <Property Name="DistricID" Type="int" />
+          <Property Name="DistricName" Type="varchar" MaxLength="255" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="UpdateDate" Type="datetime" />
+          <Property Name="Remarks" Type="varchar" MaxLength="255" />
+          <Property Name="System" Type="varchar" MaxLength="255" />
+          <Property Name="Flag" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Tbl_UploadFilePath_IMSBrick">
+          <Key>
+            <PropertyRef Name="PkID" />
+          </Key>
+          <Property Name="PkID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExecuteFileName" Type="varchar" MaxLength="255" />
+          <Property Name="EmpID" Type="bigint" />
+          <Property Name="ProcessStatus" Type="bit" />
+          <Property Name="Remarks" Type="varchar" MaxLength="255" />
+          <Property Name="CreatDate" Type="datetime" />
+          <Property Name="ProcessCompleteTime" Type="datetime" />
+          <Property Name="FileName" Type="varchar" MaxLength="255" />
+          <Property Name="System" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK__Tbl_IMSBr__Fk_Fi__34D49220">
+          <End Role="Tbl_UploadFilePath_IMSBrick" Type="Self.Tbl_UploadFilePath_IMSBrick" Multiplicity="0..1" />
+          <End Role="Tbl_IMSBrick_Tem" Type="Self.Tbl_IMSBrick_Tem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_UploadFilePath_IMSBrick">
+              <PropertyRef Name="PkID" />
+            </Principal>
+            <Dependent Role="Tbl_IMSBrick_Tem">
+              <PropertyRef Name="Fk_FileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CCLPharmaModelStoreContainer">
+          <EntitySet Name="Tbl_IMSBrick_Tem" EntityType="Self.Tbl_IMSBrick_Tem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_UploadFilePath_IMSBrick" EntityType="Self.Tbl_UploadFilePath_IMSBrick" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Tbl_IMSBr__Fk_Fi__34D49220" Association="Self.FK__Tbl_IMSBr__Fk_Fi__34D49220">
+            <End Role="Tbl_UploadFilePath_IMSBrick" EntitySet="Tbl_UploadFilePath_IMSBrick" />
+            <End Role="Tbl_IMSBrick_Tem" EntitySet="Tbl_IMSBrick_Tem" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CCLPharmaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CCLPharmaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Tbl_IMSBrick_Tem" EntityType="CCLPharmaModel.Tbl_IMSBrick_Tem" />
+          <EntitySet Name="Tbl_UploadFilePath_IMSBrick" EntityType="CCLPharmaModel.Tbl_UploadFilePath_IMSBrick" />
+          <AssociationSet Name="FK__Tbl_IMSBr__Fk_Fi__34D49220" Association="CCLPharmaModel.FK__Tbl_IMSBr__Fk_Fi__34D49220">
+            <End Role="Tbl_UploadFilePath_IMSBrick" EntitySet="Tbl_UploadFilePath_IMSBrick" />
+            <End Role="Tbl_IMSBrick_Tem" EntitySet="Tbl_IMSBrick_Tem" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Tbl_IMSBrick_Tem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Fk_FileID" Type="Int32" />
+          <Property Name="Territory" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CRM_Territory" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BrickCode" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BrickName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DistricID" Type="Int32" />
+          <Property Name="DistricName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+          <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="System" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Flag" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Tbl_UploadFilePath_IMSBrick" Relationship="CCLPharmaModel.FK__Tbl_IMSBr__Fk_Fi__34D49220" FromRole="Tbl_IMSBrick_Tem" ToRole="Tbl_UploadFilePath_IMSBrick" />
+        </EntityType>
+        <EntityType Name="Tbl_UploadFilePath_IMSBrick">
+          <Key>
+            <PropertyRef Name="PkID" />
+          </Key>
+          <Property Name="PkID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExecuteFileName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EmpID" Type="Int64" />
+          <Property Name="ProcessStatus" Type="Boolean" />
+          <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CreatDate" Type="DateTime" Precision="3" />
+          <Property Name="ProcessCompleteTime" Type="DateTime" Precision="3" />
+          <Property Name="FileName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="System" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Tbl_IMSBrick_Tem" Relationship="CCLPharmaModel.FK__Tbl_IMSBr__Fk_Fi__34D49220" FromRole="Tbl_UploadFilePath_IMSBrick" ToRole="Tbl_IMSBrick_Tem" />
+        </EntityType>
+        <Association Name="FK__Tbl_IMSBr__Fk_Fi__34D49220">
+          <End Type="CCLPharmaModel.Tbl_UploadFilePath_IMSBrick" Role="Tbl_UploadFilePath_IMSBrick" Multiplicity="0..1" />
+          <End Type="CCLPharmaModel.Tbl_IMSBrick_Tem" Role="Tbl_IMSBrick_Tem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tbl_UploadFilePath_IMSBrick">
+              <PropertyRef Name="PkID" />
+            </Principal>
+            <Dependent Role="Tbl_IMSBrick_Tem">
+              <PropertyRef Name="Fk_FileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CCLPharmaModelStoreContainer" CdmEntityContainer="CCLPharmaEntities">
+          <EntitySetMapping Name="Tbl_IMSBrick_Tem">
+            <EntityTypeMapping TypeName="CCLPharmaModel.Tbl_IMSBrick_Tem">
+              <MappingFragment StoreEntitySet="Tbl_IMSBrick_Tem">
+                <ScalarProperty Name="Flag" ColumnName="Flag" />
+                <ScalarProperty Name="System" ColumnName="System" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DistricName" ColumnName="DistricName" />
+                <ScalarProperty Name="DistricID" ColumnName="DistricID" />
+                <ScalarProperty Name="BrickName" ColumnName="BrickName" />
+                <ScalarProperty Name="BrickCode" ColumnName="BrickCode" />
+                <ScalarProperty Name="CRM_Territory" ColumnName="CRM_Territory" />
+                <ScalarProperty Name="Territory" ColumnName="Territory" />
+                <ScalarProperty Name="Fk_FileID" ColumnName="Fk_FileID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_UploadFilePath_IMSBrick">
+            <EntityTypeMapping TypeName="CCLPharmaModel.Tbl_UploadFilePath_IMSBrick">
+              <MappingFragment StoreEntitySet="Tbl_UploadFilePath_IMSBrick">
+                <ScalarProperty Name="System" ColumnName="System" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="ProcessCompleteTime" ColumnName="ProcessCompleteTime" />
+                <ScalarProperty Name="CreatDate" ColumnName="CreatDate" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ProcessStatus" ColumnName="ProcessStatus" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="ExecuteFileName" ColumnName="ExecuteFileName" />
+                <ScalarProperty Name="PkID" ColumnName="PkID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

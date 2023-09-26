@@ -1,0 +1,37 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<%-- DEFAULT SKIN FOR ACCORDION PANEL  --%>
+
+<asp:Accordion runat="server" 
+    CssClass="accordion" 
+    HeaderCssClass="accordionHeader"
+    HeaderSelectedCssClass="accordionHeaderSelected" 
+    ContentCssClass="accordionContent" 
+    SelectedIndex="0"
+    FadeTransitions="false" 
+    FramesPerSecond="40" 
+    TransitionDuration="250" 
+    AutoSize="None" 
+    RequireOpenedPane="false"
+    SuppressHeaderPostbacks="true" />
+
+<%-- EMPTY SKIN TO AVOID DEFAULT ACCORDION PANEL SKIN--%>
+
+<asp:Accordion runat="server"
+    SkinID="AccodionPanelSkin" />

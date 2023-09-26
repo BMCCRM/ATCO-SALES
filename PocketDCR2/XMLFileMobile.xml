@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MainMenu>
+
+  <rl6>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Call Planner">
+      <link url="../Schedular/CallPlannerMain.aspx" title="Call Planner"></link>
+      <link url="../Form/SchdulerDayView.aspx" title="Day Views"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+    </MainTab4>
+  </rl6>
+
+  <rl5>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Call Planner">
+      <link url="../Schedular/CallPlannerMain.aspx" title="Call Planner"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+
+    </MainTab4>
+  </rl5>
+
+  <rl4>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Call Planner">
+      <link url="../Schedular/CallPlannerMain.aspx" title="Call Planner"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+
+    </MainTab4>
+  </rl4>
+
+  <rl3>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Call Planner">
+      <link url="../Schedular/CallPlannerMain.aspx" title="Call Planner"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+
+    </MainTab4>
+  </rl3>
+
+  <rl2>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+
+    </MainTab3>
+  </rl2>
+
+  <rl1>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+
+    </MainTab3>
+  </rl1>
+
+  <admin>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Administration">
+      <link url="../Reports/MRDoctorsExcel.aspx" title="MR Doctor Upload"></link>
+      <link url="../Form/MRProducts.aspx" title="MR Products Upload"></link>
+      <link url="../Form/DivisionalHierarchy.aspx" title="Hierarchy Setup"></link>
+      <link url="../Form/BrickManagement.aspx" title="Brick Setup"></link>
+
+      <MainTab21  url="" title="Employee Setup">
+        <link url="../Form/EmployeeDesignation.aspx" title="Employees Designation"></link>
+        <link url="../Form/MEmployees.aspx" title="Employees"></link>
+        <link url="../Form/MRDoctors.aspx" title="MIO Doctors Setup"></link>
+      </MainTab21>
+
+      <MainTab22  url="" title="Doctors Setup">
+        <link url="../Form/DoctorsDesignation.aspx" title="Doctors Designation"></link>
+        <link url="../Form/DoctorClasses.aspx" title="Doctors Class"></link>
+        <link url="../Form/DoctorQualification.aspx" title="Doctors Qualification"></link>
+        <link url="../Form/Speciality.aspx" title="Doctors Speciality"></link>
+        <link url="../Form/Doctors.aspx" title="Doctors"></link>
+      </MainTab22>
+
+      <MainTab23  url="" title="Products Setup">
+        <link url="../Form/Products.aspx" title="Brand"></link>
+        <link url="../Form/ProductForms.aspx" title="Form"></link>
+        <link url="../Form/PackSize.aspx" title="Package Size"></link>
+        <link url="../Form/ProductStrength.aspx" title="Strength"></link>
+        <link url="../Form/ProductSku.aspx" title="SKU"></link>
+      </MainTab23>
+
+      <link url="../Form/D_depot.aspx" title="Depot Master"></link>
+      <link url="../Form/D_marketingview.aspx" title="Marketing View"></link>
+      <link url="../Form/GiftItems.aspx" title="Gifts Setup"></link>
+
+
+    </MainTab2>
+
+    <MainTab3  url="" title="Call Planning Admin">
+      <link url="../Schedular/Activities.aspx" title="Planning Activities"></link>
+      <link url="../Schedular/ProductsWithSpeciality.aspx" title="Planning Product With Speciality"></link>
+      <link url="../Reports/datagrid2.aspx" title="Leave Plan Management"></link>
+      <!--<link url="../Form/PlanningCache.aspx" title="Call Planner"></link>-->
+
+    </MainTab3>
+
+    <MainTab4  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab4>
+
+    <MainTab5  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+
+    </MainTab5>
+
+
+  </admin>
+
+  <headoffice>
+    <MainTab1 url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Call Planning Admin">
+      <link url="../Schedular/Activities.aspx" title="Planning Activities"></link>
+      <link url="../Schedular/ProductsWithSpeciality.aspx" title="Planning Product With Speciality"></link>
+      <link url="../Reports/datagrid2.aspx" title="Plans Status Window"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+
+    </MainTab4>
+  </headoffice>
+
+  <marketingteam>
+    <MainTab1  url="" title="Dashboard">
+      <link url="../Reports/MobileDashboard.aspx" title="CRM Dashboard"></link>
+    </MainTab1>
+
+    <MainTab2  url="" title="Reports">
+      <!--<link url="../Reports/newDataScreen.aspx" title="SMS Monitoring"></link>-->
+      <link url="../Reports/newReports.aspx" title="CRM Reports"></link>
+    </MainTab2>
+
+    <MainTab3  url="" title="Call Planning Admin">
+      <link url="../Schedular/Activities.aspx" title="Planning Activities"></link>
+      <link url="../Schedular/ProductsWithSpeciality.aspx" title="Planning Product With Speciality"></link>
+      <link url="../Reports/datagrid2.aspx" title="Plans Status Window"></link>
+    </MainTab3>
+
+    <MainTab4  url="" title="userinfo">
+      <link url="../Form/ChangePassword.aspx" title="Change Password"></link>
+      <link url="../Form/signout2.aspx" title="Log out"></link>
+
+    </MainTab4>
+  </marketingteam>
+
+</MainMenu>

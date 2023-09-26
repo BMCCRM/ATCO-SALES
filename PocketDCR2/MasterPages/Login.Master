@@ -1,0 +1,37 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="PocketDCR2.MasterPages.Login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title></title>
+    <link id="Link1" runat="server" href="~/Styles/LayOut.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="login-bg">
+  
+	<section class="section-lines">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <form id="form1" runat="server">
+                    <div id="login-holder">
+                        <div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <div class="head_text">
+                            <h2 align="right">
+                                Specially designed for  Pharma (Pakistan) Ltd</h2>
+                            <h1 align="right">
+                                © Copyright BMC Pvt Ltd</h1>
+                        </div>
+                    </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

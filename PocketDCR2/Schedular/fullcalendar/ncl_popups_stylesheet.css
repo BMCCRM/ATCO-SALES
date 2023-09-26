@@ -1,0 +1,145 @@
+/* NCL Style Sheet */
+body {margin-left: 0px;	margin-top: 0px; margin-right: 0px;	margin-bottom: 0px;}
+
+/* NCL Market By Price*/
+.mbp-table { border:solid #6192A1 1px;}
+.bg-top-mbp { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#F6F8FF; font-weight:bold; text-decoration:none; width:178px; height:20px; padding-left:5px;}
+.bg-top-mbp2 {width:104px; height:20px; }
+.mbp-inner-table {
+	margin-top:2px;
+	border: 1px solid #227297;
+	background-color: #5590BC;
+}
+.mbp-inner-1 {font-family: Verdana; font-size:12px; color:#ffffff; font-weight:normal; text-decoration:none;} 
+.mbp-inner-spacing {margin:2px 0px 0px 0px;}
+.mbp-dd-a {width:190px; font-size:12px; color:#ffffff; font-weight:normal; text-decoration:none;mbp-dd-a}
+.mbp-inner-1b {width:196px; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#FEFFFF; font-weight:normal; text-decoration:none; line-height:30px;} 
+.mbp-inner-2 {width:79px; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000000; font-weight:normal; text-decoration:none;}
+.mbp-inner-table2 {
+	margin:0px;
+	padding:2px;
+	border: 1px solid #227297;
+	background-color: #5590BC;
+}
+.mbp-inner-3 { background-color:#5590BC; font-family:Verdana; font-size:12px; color:#FEFFFF; font-weight:bold; text-decoration:none; text-align:center;}
+.mbp-inner-4 { background-color:#D16F8E; font-family:Verdana; font-size:12px; color:#FEFFFF; font-weight:bold; text-decoration:none; text-align:center;}
+.mbp-inner-5 {background-color:#ffffff; font-family:Verdana; font-size:12px; color:#000000; font-weight:bold; text-decoration:none;  height:16px; text-align:center;}
+.mbp-inner-6 {background-color:#F3F5F4; font-family:Verdana; font-size:12px; color:#000000; font-weight:bold; text-decoration:none;  height:16px; text-align:center;}
+
+/* NCL Buy Order*/
+.bo-table {
+	border: 1px solid #73908B;
+    font-family:Verdana;
+}
+.bo-table-inner {
+	border: 1px solid #73908B;
+	background-color: #D7DFE1;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-family:Verdana;
+	font-size:12px;
+}
+.bo-table-top-2 {width:102px; height:20px;}
+.bo-table-column-1 {width:28px;}
+.bo-table-column-2 
+{
+    width:42px;
+}
+.bo-table-column-3 
+{
+    width:99px; 
+    color:#000000; 
+    text-decoration:none; 
+    text-align:right; 
+    padding:5px 5px 3px;
+}
+.bo-table-column-4 
+{
+    width:99px; 
+    font-size:12px; 
+    color:#000000; 
+    text-decoration:none; 
+    text-align:left; 
+    width:135px;
+}
+.bo-table-row-1 {height:16px;}
+.bo-table-row-2 {height:12px;}
+.bo-dd-1 {width:134px; height:19px; margin-top:3px; margin-bottom:3px;}
+.bo-input-box-1{width:69px; height:15px; margin-top:3px; margin-bottom:3px;}
+.bo-input-box-2{
+	background-color:#E6EFDE;
+	width:69px;
+	height:15px;
+	margin-top:3px;
+	margin-bottom:3px;
+	border:1px solid #7F9DB9;
+}
+.button-1{ font-family:Verdana; font-size:12px; color:#000000; font-weight:normal; text-decoration:none; text-align:center;}
+.button-2{font-family:Verdana; font-size:12px; color:#000000; font-weight:normal; text-decoration:none; text-align:center;}
+.checkbox-new {color:#518A3D;}
+/* NCL Sell Order */
+.so-table-inner {
+	border: 1px solid #CB868B;
+	background-color: #EED0CE;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-family:Verdana;
+	font-size:12px;
+}
+.wo_table_popup {
+font-family: Verdana;
+font-size: 12px;
+
+}
+
+.wo_cancel_order {
+	font-family: Verdana;
+	font-size: 12px;
+	font-size-adjust: none;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	background-color: White;
+	border-left-color-ltr-source: physical;
+	border-left-color-rtl-source: physical;
+	border-left-color-value: Silver;
+	border-left-style-ltr-source: physical;
+	border-left-style-rtl-source: physical;
+	border-left-style-value: solid;
+	border-left-width-ltr-source: physical;
+	border-left-width-rtl-source: physical;
+	border-left-width-value: 2px;
+	border-right-color-ltr-source: physical;
+	border-right-color-rtl-source: physical;
+	border-right-color-value: Silver;
+	border-right-style-ltr-source: physical;
+	border-right-style-rtl-source: physical;
+	border-right-style-value: solid;
+	border-right-width-ltr-source: physical;
+	border-right-width-rtl-source: physical;
+	border-right-width-value: 2px;
+	height: 200px;
+	position: absolute;
+	width: 300px;
+	z-index: 8;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	border: 2px solid Silver;
+}
+.wo_cancel_orderbg {background:url(../images/wo_ordersbg.jpg) repeat-x top; height:20px;}
+
+#buymsg,#sellmsg
+{
+   font-family:Arial, Helvetica, sans-serif; font-size:12px;
+}
+
+
+/* NCL Other */
+.clear_a {clear:both;}
